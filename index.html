@@ -1,310 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>International Items HN | Catálogo</title>
-  <link rel="stylesheet" href="style.css?v=20251220v3" />
-  <script defer src="script.js?v=20251220v3"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b5cff" />
+  <meta name="description" content="Explora las categorías de International Items y encuentra productos de motocicletas, carros, tecnología, hogar, moda y más." />
+  <title>International Items | Catálogo por categorías</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="theme-dark">
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
 
-  <!-- 🔝 NAVBAR -->
-  <header class="navbar">
-    <div class="nav-container">
-      <h1 class="logo"><span>International</span> Items HN</h1>
-      <nav class="nav-links">
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="International Items, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <defs>
+              <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0b5cff"/>
+                <stop offset="1" stop-color="#ff3c78"/>
+              </linearGradient>
+            </defs>
+            <circle cx="30" cy="32" r="22" fill="none" stroke="url(#brandGradient)" stroke-width="5"/>
+            <path d="M8 32h44M30 10c8 8 8 36 0 44M30 10c-8 8-8 36 0 44" fill="none" stroke="url(#brandGradient)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="48" cy="14" r="8" fill="#ff3c78"/>
+            <path d="M45.5 14l1.8 1.8 3.6-4" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>
+          <strong>International Items</strong>
+          <small>Catálogo por categorías</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav-cta" href="#categorias">Ver catálogo</a>
       </nav>
-      
-      <div class="nav-actions">
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
-          <span class="t-dark is-active">🌙 Oscuro</span>
-          <span class="t-sep">|</span>
-          <span class="t-light">☀️ Claro</span>
-        </button>
-        <button id="cart-btn" class="cart-btn">🛒 <span id="cart-count">0</span></button>
-      </div>
-
     </div>
   </header>
 
-<!-- ⚡ OFERTAS CYBER WEEK (BANNER PRO) -->
-<section class="cyber-week-banner" aria-live="polite">
-  <div class="cyber-week-inner">
-    
-    <div class="cyber-left">
-      <div class="cyber-badge">🔥🛒⚡</div>
-      <div class="cyber-title">
-  OFERTAS TEMPORALES CYBER WEEK 
-  <span class="cyber-title-sub">ENVÍO GRATIS TODO HONDURAS</span>
-      <div class="cyber-subtitle">Descuentos relámpago por tiempo limitado</div>
-    </div>
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
 
-    <div class="cyber-right">
-      <div class="cyber-label">Acaba en</div>
-      <div class="cyber-digital" id="cyber-countdown">
-        <div class="cyber-unit">
-          <span class="cyber-num" id="cw-days">06</span>
-          <span class="cyber-text">DÍAS</span>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Compra fácil, rápida y segura</span>
+          <h1>Encuentra fácilmente <span>lo que necesitas</span></h1>
+          <p>Selecciona una categoría y entra directamente a sus productos, precios y promociones.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#categorias">
+              Explorar categorías
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="button button-secondary" href="#como-funciona">¿Cómo funciona?</a>
+          </div>
+
+          <div class="quick-search" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="category-search" type="search" autocomplete="off" placeholder="Buscar una categoría..." aria-label="Buscar una categoría" />
+            <kbd>Ctrl K</kbd>
+          </div>
+
+          <div class="hero-trust" aria-label="Beneficios principales">
+            <span>✓ Fácil de usar</span>
+            <span>✓ Adaptado a celular</span>
+            <span>✓ Enlaces directos</span>
+          </div>
         </div>
-        <span class="cyber-sep">:</span>
-        <div class="cyber-unit">
-          <span class="cyber-num" id="cw-hours">23</span>
-          <span class="cyber-text">HORAS</span>
-        </div>
-        <span class="cyber-sep">:</span>
-        <div class="cyber-unit">
-          <span class="cyber-num" id="cw-mins">00</span>
-          <span class="cyber-text">MIN</span>
-        </div>
-        <span class="cyber-sep">:</span>
-        <div class="cyber-unit">
-          <span class="cyber-num" id="cw-secs">00</span>
-          <span class="cyber-text">SEG</span>
+
+        <div class="hero-visual" aria-label="Presentación visual del catálogo">
+          <div class="orbital-scene" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="globe">
+              <div class="globe-grid"></div>
+              <div class="globe-shine"></div>
+            </div>
+            <span class="floating-chip chip-one">Tecnología</span>
+            <span class="floating-chip chip-two">Moda</span>
+            <span class="floating-chip chip-three">Hogar</span>
+            <span class="floating-chip chip-four">Vehículos</span>
+          </div>
+
+          <div class="hero-card-preview preview-one">
+            <span class="mini-icon">📱</span>
+            <div><small>Explora</small><strong>Tecnología</strong></div>
+          </div>
+          <div class="hero-card-preview preview-two">
+            <span class="mini-icon">🏍️</span>
+            <div><small>Descubre</small><strong>Motocicletas</strong></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section class="section categories-section" id="categorias">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Nuestro catálogo</span>
+            <h2>Elige una categoría</h2>
+            <p>Toca cualquier cuadro para abrir su catálogo. No necesitas registrarte.</p>
+          </div>
+          <div class="category-count"><strong id="visible-count">9</strong><span>categorías</span></div>
+        </div>
 
-  <!-- 🦋 HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <h2>Tu estilo, tu tienda</h2>
-      <p>Productos modernos, precios irresistibles y calidad garantizada.</p>
-      <p>Lo piensas, Lo tenemos O lo traemos 🛩📦</p>
-      <button class="btn-primary scroll-to" data-target="#productos">Explorar productos</button>
-    </div>
-  </section>
+        <div class="mobile-category-select">
+          <label for="category-select">Selecciona una categoría</label>
+          <select id="category-select">
+            <option value="">Elige una opción</option>
+          </select>
+          <button id="go-category" class="button button-primary" type="button">Abrir categoría</button>
+        </div>
 
-  <!-- 💎 PRODUCTOS -->
-  <section class="products" id="productos">
-<!-- 🏷️ Categorías -->
-<div id="category-bar" class="category-bar"></div>
-    <div class="products-header">
-      <div class="sort-control">
-        <label for="sort-select">Ordenar de:</label>
-        <select id="sort-select" aria-label="Ordenar productos">
-          <option value="recent" selected>Producto recien ingresado</option>
-          <option value="price_asc">de menor a mayor precio</option>
-          <option value="az">Ordenar de A - Z</option>
-        </select>
+        <div class="category-grid" id="category-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-icon">🔎</div>
+          <h3>No encontramos esa categoría</h3>
+          <p>Prueba con otra palabra, por ejemplo: tecnología, hogar o carros.</p>
+          <button type="button" id="clear-search" class="button button-secondary">Ver todas</button>
+        </div>
       </div>
-      <h2 class="section-title">Nuestros Productos</h2>
-      <div class="products-header-spacer" aria-hidden="true"></div>
-    </div>
-    <!-- 🔎 Banner de resultados de búsqueda -->
-<div id="search-banner" class="search-banner hidden">
-  <span id="search-banner-text"></span>
-  <button id="clear-search" class="search-banner-close" aria-label="Quitar filtro">✕</button>
-</div>
-    <div class="product-grid" id="product-list"></div>
-  </section>
+    </section>
 
-  <!-- 🛒 MODAL CARRITO -->
-  <div id="cart-modal" class="cart-modal hidden">
-    <div class="cart-content">
-      <button id="close-cart" class="close-cart">&times;</button>
-      <h3>🛍️ Tu Carrito</h3>
-      <div id="cart-items"></div>
-      <div class="cart-footer">
-        <p>Total: <span id="cart-total">L 0</span></p>
-        <button class="btn-checkout" id="checkout-btn">Finalizar compra</button>
+    <section class="section how-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">Sin complicaciones</span>
+          <h2>Así de fácil funciona</h2>
+          <p>Diseñado para que cualquier persona encuentre lo que busca en segundos.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <div class="step-icon">👆</div>
+            <h3>Elige una categoría</h3>
+            <p>Selecciona el cuadro que corresponda al producto que buscas.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <div class="step-icon">🛍️</div>
+            <h3>Revisa los productos</h3>
+            <p>La categoría se abrirá con sus productos, precios y promociones.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <div class="step-icon">💬</div>
+            <h3>Consulta o compra</h3>
+            <p>Contacta a nuestro equipo desde el catálogo correspondiente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section" id="beneficios">
+      <div class="container benefits-grid">
+        <article class="benefit-card">
+          <span class="benefit-icon">🛡️</span>
+          <div><h3>Compra segura</h3><p>Información clara y atención directa.</p></div>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-icon">🏷️</span>
+          <div><h3>Mejores opciones</h3><p>Productos organizados por categoría.</p></div>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-icon">🚚</span>
+          <div><h3>Envíos disponibles</h3><p>Consulta cobertura y métodos de entrega.</p></div>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-icon">🎧</span>
+          <div><h3>Atención al cliente</h3><p>Estamos para ayudarte antes de comprar.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="preguntas">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <span class="section-kicker">Preguntas frecuentes</span>
+          <h2>Todo claro desde el inicio</h2>
+          <p>Estas respuestas ayudan a nuevos clientes a navegar sin confusiones.</p>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>¿Cómo entro a una categoría?</summary>
+            <p>Solo toca la imagen o el botón “Ver categoría”. Serás enviado directamente al catálogo correspondiente.</p>
+          </details>
+          <details>
+            <summary>¿Puedo entrar desde mi celular?</summary>
+            <p>Sí. La página está optimizada para teléfonos, tabletas y computadoras.</p>
+          </details>
+          <details>
+            <summary>¿Esta página muestra todos los productos?</summary>
+            <p>Esta es la página inicial. Cada categoría abre su propia página con los productos, precios y detalles.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><circle cx="30" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="5"/><path d="M8 32h44M30 10c8 8 8 36 0 44M30 10c-8 8-8 36 0 44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="14" r="8" fill="#ff3c78"/></svg>
+          </span>
+          <span><strong>International Items</strong><small>Todo en un solo lugar</small></span>
+        </a>
+        <p>Una forma sencilla, moderna y confiable de explorar nuestros catálogos.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Navegación</strong>
+        <a href="#categorias">Categorías</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#beneficios">Beneficios</a>
+      </div>
+      <div class="footer-links">
+        <strong>Categorías populares</strong>
+        <a href="#categorias" data-search-link="tecnología">Tecnología</a>
+        <a href="#categorias" data-search-link="hogar">Hogar</a>
+        <a href="#categorias" data-search-link="motocicletas">Motocicletas</a>
       </div>
     </div>
-  </div>
-
-  <!-- 💳 FORMULARIO DE CHECKOUT -->
-  <div id="checkout-modal" class="cart-modal hidden">
-    <div class="cart-content">
-      <button id="close-checkout" class="close-cart">&times;</button>
-      <h3>📦 Datos de envío</h3>
-
-      <p class="checkout-note">
-        <strong>NOTA:</strong> ESPERAR ENTRE 2-10 MINUTOS EL COSTO DEL ENVÍO YA QUE ESE COSTO ES INDEPENDIENTE DEL ENTREGADOR EN MOTOCICLETA.<br>
-        <strong>SI COMPRAS IGUAL O MÁS DE 2,500 LPS, RECIBES ENVÍO GRATIS</strong> <span class="emoji">😊</span>
-      </p>
-
-<form id="checkout-form" novalidate>
-  <label>Nombre del cliente*</label>
-  <input type="text" name="nombre" required>
-
-
-
-  <label>Referencia (ej. frente a hotel Clarion)*</label>
-  <input type="text" name="referencia" required>
-
-  <label>Número para llamadas 1*</label>
-  <input type="tel" name="telefono1" required>
-
-  <label>Número para llamadas 2 (opcional)</label>
-  <input type="tel" name="telefono2">
-
-  <label>Día que desea el envío*</label>
-  <select name="dia" required>
-    <option value="">Selecciona una opción</option>
-    <option value="Hoy">Hoy</option>
-    <option value="Mañana">Mañana</option>
-    <option value="Otro">Otro (escriba debajo)</option>
-  </select>
-  <input type="text" name="dia_otro" placeholder="Escriba el día si eligió 'Otro'">
-
-  <label>¿De dónde eres?*</label>
-  <select name="ubicacion" required>
-    <option value="">Selecciona una ubicación</option>
-    <option value="Tegucigalpa">Tegucigalpa</option>
-    <option value="Otro departamento">Otro departamento</option>
-  </select>
-
-
- <label>Vendedor Que te Atendió*</label>
-<select name="vendedor_aten" id="vendedor_aten" required>
-  <option value="">Selecciona un Vendedor</option>
-  <option value="Mayra">Mayra</option>
-  <option value="Edith">Edith</option>
-  <option value="Rigo">Rigo</option>
-  <option value="Otro">Otro</option>
-</select>
-
-<!-- 🆕 Campo oculto que se muestra solo si elige “Otro” -->
-<input
-  type="text"
-  name="vendedor_otro"
-  id="vendedor_otro"
-  placeholder="Escriba el nombre del vendedor"
-  style="display: none; margin-top: 8px;"
-/>
-
-  
-  <label>Dirección de envío*</label>
-<select name="direccion_envio" id="direccion_envio" required>
-  <option value="">Selecciona tu colonia/sector</option>
-</select>
-
-<!-- 📦 Recuadro de costos -->
-<div class="shipping-box" id="shipping-box">
-  <div class="row"><span>Subtotal productos</span><span id="subtotal-checkout">—</span></div>
-  <div class="row"><span>Costo de envío</span><span id="envio-valor">—</span></div>
-  <div class="row total"><span>Total a pagar</span><span id="total-checkout">—</span></div>
-  <small class="hint">Envío GRATIS a partir de L 2,500.</small>
-</div>
-
-  <label>Método de pago*</label>
-  <select name="metodo_pago" required>
-    <option value="">Selecciona un método</option>
-    <option value="Efectivo">💵 Efectivo</option>
-    <option value="Transferencia">💳 Transferencia</option>
-  </select>
-
-  <button type="submit" class="btn-primary">Enviar pedido</button>
-</form>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> International Items.</span>
+      <span>Catálogo por categorías.</span>
     </div>
-  </div>
-
-  <!-- 📞 CONTACTO -->
-  <section class="contact" id="contacto">
-    <h2 class="section-title">Contáctanos</h2>
-    <form id="contact-form" class="contact-form">
-  <input type="text" name="nombre" placeholder="Tu nombre" required>
-  <input type="email" name="correo" placeholder="Tu correo" required>
-  <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
-  <button class="btn-primary" type="submit">Enviar mensaje</button>
-  <div id="contact-status" style="text-align:center;font-weight:500;margin-top:.5rem;"></div>
-</form>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 RAUDA Shop — Todos los derechos reservados</p>
   </footer>
- <!-- 🔍 Lightbox con navegación -->
-<div id="image-viewer" class="image-viewer hidden">
-  <button id="viewer-prev" class="viewer-arrow">❮</button>
-  <img id="viewer-img" src="" alt="Vista ampliada">
-  <button id="viewer-next" class="viewer-arrow">❯</button>
-  <span id="close-viewer">&times;</span>
-</div>
-  
-<!-- 🛒 Botón flotante del carrito -->
-<button id="floating-cart" class="floating-cart hidden">
-  🛍️ <span id="floating-cart-count">0</span>
-</button>
 
-<!-- 🟢 Botón flotante de WhatsApp -->
-<a id="floating-whatsapp" class="floating-whatsapp hidden" 
-   href="https://wa.me/50496310102?text=estoy%20interesado%20en%20los%20productos" 
-   target="_blank" rel="noopener" aria-label="WhatsApp">
-   <img src="images/whatsapp-icon.png" alt="WhatsApp" class="wa-icon">
-</a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<!-- 💬 Burbuja animada de WhatsApp -->
-<div id="whatsapp-bubble" class="whatsapp-bubble hidden">
-  💬 Escríbenos por WhatsApp!!!
-</div>
-
-
-  
-<!-- 🔎 Botón flotante de búsqueda -->
-<button id="floating-search" class="floating-search hidden" aria-label="Buscar productos">🔎</button>
-
-<!-- 🔍 Modal de búsqueda -->
-<div id="search-modal" class="search-modal hidden">
-  <div class="search-content" role="dialog" aria-modal="true" aria-labelledby="search-title">
-    <button id="close-search-modal" class="close-search" aria-label="Cerrar">×</button>
-    <h3 id="search-title">Buscar productos</h3>
-    <div class="search-bar">
-      <input id="fs-input" type="text" placeholder="Nombre, descripción o precio..." autocomplete="off" />
-      <button id="search-confirm" class="btn-search">Buscar</button>
-    </div>
-    <p class="search-hint">Consejos: prueba “powerbank”, “cámara”, “300”, “L 140”, etc.</p>
-  </div>
-</div>
-
-<!-- ✅ SDK EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof emailjs === "undefined") { console.error("❌ EmailJS no cargó correctamente"); return; }
-    emailjs.init("XwKAz-6miwjRCNBcd");   // ← tu Public Key
-  });
-</script>
-
-<!-- 🟣 AVISO CENTRAL TEMPORAL -->
-<div id="cyber-alert" class="cyber-alert">
-  ⚡ OFERTAS TEMPORALES CYBER WEEK — ENVÍOS GRATIS A PARTIR DE 2,500 LPS ⚡
-</div>
-  
-
-<!-- ℹ️ Modal: Más información del producto -->
-<div id="product-info-modal" class="product-info-modal hidden">
-  <div class="product-info-content" role="dialog" aria-modal="true" aria-label="Detalles del producto">
-    <button id="close-product-info" class="close-product-info" type="button" aria-label="Cerrar">×</button>
-    <div id="product-info-body"></div>
-  </div>
-</div>
-
-
-<!-- 📌 Barra inferior (móvil): Buscar / WhatsApp / Carrito -->
-<div id="mobile-dock" class="mobile-dock" aria-label="Acciones rápidas">
-  <button id="dock-search" class="dock-btn" type="button" aria-label="Buscar productos">🔎 Buscar</button>
-  <a id="dock-whatsapp" class="dock-btn dock-wa" href="https://wa.me/50496310102?text=estoy%20interesado%20en%20los%20productos" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
-  <button id="dock-cart" class="dock-btn dock-cart" type="button" aria-label="Abrir carrito">🛍️ Carrito <span id="dock-cart-count">0</span></button>
-</div>
-
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
