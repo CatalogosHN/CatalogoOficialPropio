@@ -31,7 +31,7 @@ function openCategory(category) {
 
   const url = String(category.url || '').trim();
   if (!url || url === '#') {
-    showToast(`La categoría “${category.name}” todavía no tiene enlace configurado.`);
+    showToast(`La categoría “${category.name}” todavía no tiene catalogo configurado.`);
     return;
   }
 
