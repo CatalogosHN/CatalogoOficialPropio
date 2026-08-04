@@ -17,6 +17,7 @@
   let progressValue = 0;
   let progressTimer = null;
   let responseTimer = null;
+  let stateTimer = null;
   let currentRequestId = '';
 
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -189,14 +190,6 @@
       if (event.target === event.currentTarget) closeViewer();
     });
 
-    $('#retry-order').addEventListener('click', beginOrderSubmission);
-    $('#whatsapp-order').addEventListener('click', () => {
-      const pending = loadPendingOrder();
-      const payload = pending?.payload || (cart.length ? orderPayload() : null);
-      if (payload) openWhatsApp(payload);
-    });
-    $('#close-process').addEventListener('click', hideProcessingOverlay);
-    $('#finish-order').addEventListener('click', finishSuccessfulOrder);
     $('#recovery-open-checkout').addEventListener('click', () => {
       hideRecoveryBanner();
       openCheckout();
@@ -554,7 +547,7 @@
     if ($('#order-process-overlay')) return;
     document.body.insertAdjacentHTML('beforeend', `
       <div id="order-process-overlay" class="order-process-overlay" hidden aria-hidden="true">
-        <section class="order-process-card" role="dialog" aria-modal="true" aria-labelledby="order-process-title">
+        <section class="order-process-card" role="alertdialog" aria-modal="true" aria-labelledby="order-process-title" aria-describedby="order-process-message">
           <div id="order-process-icon" class="order-process-icon">📦</div>
           <p class="order-process-kicker">International Items HN</p>
           <h2 id="order-process-title">Procesando tu pedido</h2>
@@ -565,15 +558,7 @@
             </div>
             <strong id="order-progress-percent">0%</strong>
           </div>
-          <p class="order-process-safe">🔒 Tu carrito y tus datos están guardados localmente en este dispositivo.</p>
-          <div id="order-process-actions" class="order-process-actions" hidden>
-            <button id="retry-order" class="primary-button" type="button">Volver a intentar</button>
-            <button id="whatsapp-order" class="secondary-button" type="button">Enviar por WhatsApp</button>
-            <button id="close-process" class="text-button" type="button">Volver al formulario</button>
-          </div>
-          <div id="order-success-actions" class="order-process-actions" hidden>
-            <button id="finish-order" class="primary-button" type="button">Listo</button>
-          </div>
+          <p class="order-process-safe">🔒 La pantalla permanecerá bloqueada hasta recibir la confirmación. Tu carrito y tus datos están guardados en este dispositivo.</p>
         </section>
       </div>
       <aside id="order-recovery-banner" class="order-recovery-banner" hidden>
@@ -585,6 +570,7 @@
   }
 
   function showProcessingOverlay() {
+    clearTimeout(stateTimer);
     const overlay = $('#order-process-overlay');
     overlay.hidden = false;
     overlay.setAttribute('aria-hidden', 'false');
@@ -592,8 +578,6 @@
     $('#order-process-icon').textContent = '📦';
     $('#order-process-title').textContent = 'Procesando tu pedido';
     $('#order-process-message').textContent = 'No cierres ni recargues esta página mientras confirmamos tu pedido.';
-    $('#order-process-actions').hidden = true;
-    $('#order-success-actions').hidden = true;
     document.body.classList.add('modal-open', 'order-submitting');
     setProgress(0);
   }
@@ -668,21 +652,21 @@
     $('#order-status').textContent = `Pedido ${orderId} recibido correctamente ✅`;
     const overlay = $('#order-process-overlay');
     overlay.classList.add('is-success');
+    overlay.classList.remove('is-error');
     $('#order-process-icon').textContent = '✅';
     $('#order-process-title').textContent = 'Pedido enviado correctamente';
-    $('#order-process-message').textContent = `Tu número de pedido es ${orderId}. Ya fue registrado y enviado a la tienda.`;
-    $('#order-process-actions').hidden = true;
-    $('#order-success-actions').hidden = false;
+    $('#order-process-message').textContent = `Hemos recibido tu pedido ${orderId}. Espera a que uno de nuestros asesores se comunique contigo para confirmar la entrega.`;
+
     cart = [];
     localStorage.removeItem(CART_KEY);
-    clearCheckoutDraft();
     clearPendingOrder();
     updateCartUI();
-    $('#checkout-form').reset();
-    fillAddresses(false);
-    toggleOther();
+    updateCheckoutTotals();
     hideRecoveryBanner();
-    toast('Pedido enviado a Gmail ✅');
+    toast('Pedido enviado correctamente ✅');
+
+    clearTimeout(stateTimer);
+    stateTimer = setTimeout(finishSuccessfulOrder, 5500);
   }
 
   function finishSuccessfulOrder() {
@@ -694,6 +678,7 @@
   function showProcessingFailure(message, payload) {
     stopProgress();
     clearTimeout(responseTimer);
+    clearTimeout(stateTimer);
     sending = false;
     $('#submit-order').disabled = false;
     $('#order-status').textContent = message;
@@ -704,7 +689,7 @@
       if (payload) pending.payload = payload;
       savePendingOrder(pending);
     }
-    setProgress(progressValue || 0);
+
     const overlay = $('#order-process-overlay');
     overlay.hidden = false;
     overlay.setAttribute('aria-hidden', 'false');
@@ -712,11 +697,17 @@
     overlay.classList.remove('is-success');
     $('#order-process-icon').textContent = '⚠️';
     $('#order-process-title').textContent = 'No se pudo confirmar el pedido';
-    $('#order-process-message').textContent = message;
-    $('#order-process-actions').hidden = false;
-    $('#order-success-actions').hidden = true;
+    $('#order-process-message').textContent = `${message} Regresaremos al formulario; tus datos y tu carrito permanecen guardados.`;
     document.body.classList.add('modal-open');
     document.body.classList.remove('order-submitting');
+
+    stateTimer = setTimeout(() => {
+      hideProcessingOverlay();
+      restoreCheckoutDraft();
+      updateCheckoutTotals();
+      $('#checkout-overlay').hidden = false;
+      document.body.classList.add('modal-open');
+    }, 5200);
   }
 
   function recoverInterruptedOrder() {

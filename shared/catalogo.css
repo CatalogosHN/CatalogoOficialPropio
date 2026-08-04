@@ -29,3 +29,9 @@ body.order-submitting>*:not(.order-process-overlay){pointer-events:none;user-sel
 body.order-submitting .order-process-overlay{pointer-events:auto;user-select:auto}
 @keyframes orderPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
 @media(max-width:650px){.order-process-card{padding:24px 18px;border-radius:22px}.order-recovery-banner{top:76px;grid-template-columns:1fr auto}.order-recovery-banner .primary-button{grid-column:1/-1;width:100%}.order-recovery-banner .icon-button{position:absolute;right:8px;top:8px}.order-recovery-banner div{padding-right:34px}}
+
+/* Procesamiento irreversible dentro de la página: sin cancelar, cerrar ni regresar */
+.order-process-overlay{cursor:wait;touch-action:none;overscroll-behavior:contain}
+.order-process-card{pointer-events:none;user-select:none}
+.order-process-overlay.is-success,.order-process-overlay.is-error{cursor:default}
+body.order-submitting{overflow:hidden;touch-action:none}
