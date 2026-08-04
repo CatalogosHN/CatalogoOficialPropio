@@ -1,7 +1,7 @@
 window.SITE_CONFIG = {
-  appsScriptUrl: "PEGAR_AQUI_URL_DE_APPS_SCRIPT",
-  whatsappNumber: "50496310102",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbxFoUiXvJ3Z685fMiSFnDIMJBzx7Mx_aYq3CTc8Q_GjdwhhbWSTKfFOvTVw9YpLM4KJ/exec",
+  whatsappNumber: "50489665936",
   freeShippingThreshold: 2500,
-  storeName: "International Items HN",
+  storeName: "Items HN",
   homeUrl: "/"
 };
