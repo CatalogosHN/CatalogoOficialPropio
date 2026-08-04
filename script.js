@@ -54,6 +54,7 @@ function categoryCardTemplate(category, index) {
       <div class="category-content">
         <h3>${category.name}</h3>
         <p>${category.description}</p>
+        <small class="card-product-count">${category.count} ${category.count === 1 ? 'producto' : 'productos'}</small>
         <span class="category-action">
           Ver categoría
           <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>

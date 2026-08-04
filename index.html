@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -61,14 +64,14 @@
         <div class="hero-copy">
           <span class="eyebrow"><span class="eyebrow-dot"></span> Compra fácil, rápida y segura</span>
           <h1>Encuentra fácilmente <span>lo que necesitas</span></h1>
-          <p>Selecciona una categoría y entra directamente a sus productos, precios y promociones.</p>
+          <p>Selecciona una categoría, agrega productos al mismo carrito y envía tu pedido desde cualquier dispositivo.</p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#categorias">
               Ver Productos
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="button button-secondary" href="#como-funciona">¿Cómo funciona?</a>
+            <a class="button button-secondary" href="catalogo/">Ver todo el catálogo</a>
           </div>
 
           <div class="quick-search" role="search">
@@ -118,7 +121,7 @@
             <h2>Elige una categoría</h2>
             <p>Toca cualquier cuadro para abrir su catálogo. No necesitas registrarte.</p>
           </div>
-          <div class="category-count"><strong id="visible-count">9</strong><span>categorías</span></div>
+          <div class="category-count"><strong id="visible-count">11</strong><span>categorías</span></div>
         </div>
 
         <div class="mobile-category-select">
@@ -165,7 +168,7 @@
             <span class="step-number">3</span>
             <div class="step-icon">💬</div>
             <h3>Consulta o compra</h3>
-            <p>Contacta a nuestro equipo desde el catálogo correspondiente.</p>
+            <p>Completa tus datos y envía el pedido; llegará al panel de Google y al correo configurado.</p>
           </article>
         </div>
       </div>
@@ -211,7 +214,7 @@
           </details>
           <details>
             <summary>¿Esta página muestra todos los productos?</summary>
-            <p>Esta es la página inicial. Cada categoría abre su propia página con los productos, precios y detalles.</p>
+            <p>Cada categoría muestra sus productos, pero el carrito se comparte entre todas porque todo funciona bajo el mismo dominio.</p>
           </details>
         </div>
       </div>
@@ -243,7 +246,7 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="current-year"></span> International Items.</span>
+      <span>© <span id="current-year"></span> International Items HN.</span>
       <span>Catálogo por categorías.</span>
     </div>
   </footer>

@@ -1,88 +1,123 @@
-/*
-  CAMBIA AQUÍ LOS ENLACES.
-  Sustituye "#" por la dirección final de cada página.
-  Ejemplo: url: "https://tecnologia.tudominio.com"
-*/
 window.CATEGORY_CONFIG = [
   {
-    id: "motocicletas",
-    name: "Motocicletas",
-    description: "Accesorios, repuestos y productos para motociclistas.",
-    url: "#",
-    image: "assets/motocicletas.jpg",
-    icon: "🏍️",
-    accent: "#0b5cff"
+    "slug": "motocicletas",
+    "name": "Motocicletas",
+    "icon": "🏍️",
+    "description": "Accesorios, equipos y productos para motociclistas.",
+    "image": "assets/motocicletas.jpg",
+    "accent": "#0b5cff",
+    "count": 23,
+    "url": "motocicletas/",
+    "id": "motocicletas"
   },
   {
-    id: "carros",
-    name: "Carros",
-    description: "Productos y accesorios para mejorar tu vehículo.",
-    url: "#",
-    image: "assets/carros.jpg",
-    icon: "🚘",
-    accent: "#0a7cff"
+    "slug": "autos",
+    "name": "Autos",
+    "icon": "🚘",
+    "description": "Accesorios y soluciones para mejorar tu vehículo.",
+    "image": "assets/carros.jpg",
+    "accent": "#0a7cff",
+    "count": 4,
+    "url": "autos/",
+    "id": "autos"
   },
   {
-    id: "tecnologia",
-    name: "Tecnología y celulares",
-    description: "Celulares, accesorios, gadgets y productos tecnológicos.",
-    url: "#",
-    image: "assets/tecnologia.jpg",
-    icon: "📱",
-    accent: "#7c3aed"
+    "slug": "tecnologia-celulares",
+    "name": "Tecnología y celulares",
+    "icon": "📱",
+    "description": "Celulares, accesorios, computación y gadgets.",
+    "image": "assets/tecnologia.jpg",
+    "accent": "#7c3aed",
+    "count": 53,
+    "url": "tecnologia-celulares/",
+    "id": "tecnologia-celulares"
   },
   {
-    id: "hogar",
-    name: "Hogar",
-    description: "Artículos prácticos para organizar y mejorar tus espacios.",
-    url: "#",
-    image: "assets/hogar.jpg",
-    icon: "🏠",
-    accent: "#0891b2"
+    "slug": "hogar",
+    "name": "Hogar",
+    "icon": "🏠",
+    "description": "Artículos prácticos y decoración para tus espacios.",
+    "image": "assets/hogar.jpg",
+    "accent": "#0891b2",
+    "count": 7,
+    "url": "hogar/",
+    "id": "hogar"
   },
   {
-    id: "moda",
-    name: "Moda",
-    description: "Ropa, accesorios y novedades para tu estilo.",
-    url: "#",
-    image: "assets/moda.jpg",
-    icon: "👕",
-    accent: "#db2777"
+    "slug": "ropa-calzado",
+    "name": "Ropa y calzado",
+    "icon": "👕",
+    "description": "Ropa, calzado y accesorios para tu estilo.",
+    "image": "assets/moda.jpg",
+    "accent": "#db2777",
+    "count": 4,
+    "url": "ropa-calzado/",
+    "id": "ropa-calzado"
   },
   {
-    id: "carteras",
-    name: "Carteras",
-    description: "Carteras, bolsos y accesorios para toda ocasión.",
-    url: "#",
-    image: "assets/carteras.jpg",
-    icon: "👜",
-    accent: "#d97706"
+    "slug": "carteras-bolsos",
+    "name": "Carteras y bolsos",
+    "icon": "👜",
+    "description": "Carteras, bolsos y accesorios para toda ocasión.",
+    "image": "assets/carteras.jpg",
+    "accent": "#d97706",
+    "count": 10,
+    "url": "carteras-bolsos/",
+    "id": "carteras-bolsos"
   },
   {
-    id: "juguetes",
-    name: "Juguetes",
-    description: "Diversión para niños, regalos y productos creativos.",
-    url: "#",
-    image: "assets/juguetes.jpg",
-    icon: "🧸",
-    accent: "#f43f5e"
+    "slug": "juguetes",
+    "name": "Juguetes",
+    "icon": "🧸",
+    "description": "Diversión, regalos y productos creativos.",
+    "image": "assets/juguetes.jpg",
+    "accent": "#f43f5e",
+    "count": 9,
+    "url": "juguetes/",
+    "id": "juguetes"
   },
   {
-    id: "herramientas",
-    name: "Herramientas",
-    description: "Herramientas y soluciones útiles para cada trabajo.",
-    url: "#",
-    image: "assets/herramientas.jpg",
-    icon: "🛠️",
-    accent: "#f59e0b"
+    "slug": "herramientas",
+    "name": "Herramientas",
+    "icon": "🛠️",
+    "description": "Herramientas y soluciones útiles para cada trabajo.",
+    "image": "assets/herramientas.jpg",
+    "accent": "#f59e0b",
+    "count": 3,
+    "url": "herramientas/",
+    "id": "herramientas"
   },
   {
-    id: "entretenimiento",
-    name: "Entretenimiento",
-    description: "Gaming, audio y productos para disfrutar tu tiempo libre.",
-    url: "#",
-    image: "assets/entretenimiento.jpg",
-    icon: "🎮",
-    accent: "#6d28d9"
+    "slug": "entretenimiento",
+    "name": "Entretenimiento",
+    "icon": "🎮",
+    "description": "Gaming, audio y productos para disfrutar tu tiempo libre.",
+    "image": "assets/entretenimiento.jpg",
+    "accent": "#6d28d9",
+    "count": 0,
+    "url": "entretenimiento/",
+    "id": "entretenimiento"
+  },
+  {
+    "slug": "seguridad",
+    "name": "Seguridad",
+    "icon": "🛡️",
+    "description": "Cámaras, vigilancia y productos de protección.",
+    "image": "assets/seguridad.jpg",
+    "accent": "#059669",
+    "count": 9,
+    "url": "seguridad/",
+    "id": "seguridad"
+  },
+  {
+    "slug": "otros",
+    "name": "Otros",
+    "icon": "✨",
+    "description": "Productos especiales que no encajan en las demás categorías.",
+    "image": "assets/otros.jpg",
+    "accent": "#64748b",
+    "count": 13,
+    "url": "otros/",
+    "id": "otros"
   }
 ];

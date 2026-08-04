@@ -252,3 +252,5 @@ details p { margin: 0; padding: 0 22px 22px; color: rgba(255,255,255,.68); line-
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+.card-product-count{display:inline-flex;margin-top:.45rem;padding:.35rem .65rem;border-radius:999px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);font-weight:800;font-size:.78rem}.category-card[data-count="0"]{opacity:.78}
