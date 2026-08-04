@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b5cff">
+  <meta name="description" content="Catálogo de International Items HN">
+  <title>Juguetes | International Items HN</title>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared/catalogo.css">
+</head>
+<body data-category="Juguetes">
+  <header class="catalog-header">
+    <a class="catalog-brand" href="./" aria-label="Volver a inicio"><img src="assets/icon-192.png" alt=""><span><strong>International Items</strong><small>Catálogo oficial</small></span></a>
+    <nav><a href="./">Inicio</a><a href="catalogo/">Todos</a><button id="open-cart-top" class="cart-pill" type="button">🛒 <span id="cart-count-top">0</span></button></nav>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div>
+        <a class="back-link" href="./#categorias">← Todas las categorías</a>
+        <span id="category-icon" class="category-icon">🛍️</span>
+        <h1 id="catalog-title">Catálogo</h1>
+        <p id="catalog-description">Productos disponibles de International Items HN.</p>
+        <span id="product-count" class="result-count">Cargando productos…</span>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Filtros del catálogo">
+      <label class="search-box"><span>🔎</span><input id="search-products" type="search" placeholder="Buscar producto…" autocomplete="off"></label>
+      <select id="category-filter" aria-label="Filtrar por categoría"></select>
+      <select id="sort-products" aria-label="Ordenar productos"><option value="recent">Más recientes</option><option value="price-asc">Precio menor a mayor</option><option value="price-desc">Precio mayor a menor</option><option value="az">Nombre A–Z</option></select>
+    </section>
+
+    <section class="products-wrap">
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <div id="empty-products" class="empty-products" hidden><div>🔎</div><h2>No hay productos aquí</h2><p>Prueba otra búsqueda o regresa a todas las categorías.</p><a href="catalogo/" class="primary-button">Ver catálogo completo</a></div>
+    </section>
+  </main>
+
+  <button id="floating-cart" class="floating-cart" type="button" aria-label="Abrir carrito">🛒<span id="floating-cart-count">0</span></button>
+  <a id="floating-wa" class="floating-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+  <div id="cart-overlay" class="overlay" hidden>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="drawer-head"><div><small>Compra guardada</small><h2 id="cart-title">Tu carrito</h2></div><button id="close-cart" class="icon-button" type="button">✕</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="drawer-footer"><div class="cart-total-row"><span>Total productos</span><strong id="cart-total">L 0</strong></div><p class="saved-note">El carrito permanece guardado aunque cierres la página.</p><button id="checkout-button" class="primary-button wide" type="button">Continuar pedido</button></div>
+    </aside>
+  </div>
+
+  <div id="checkout-overlay" class="overlay center" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <div class="drawer-head"><div><small>Último paso</small><h2 id="checkout-title">Datos del pedido</h2></div><button id="close-checkout" class="icon-button" type="button">✕</button></div>
+      <form id="checkout-form">
+        <div class="form-grid">
+          <label>Nombre del cliente*<input name="nombre" required autocomplete="name"></label>
+          <label>Teléfono principal*<input name="telefono1" required inputmode="tel" autocomplete="tel"></label>
+          <label>Teléfono adicional<input name="telefono2" inputmode="tel"></label>
+          <label>Día de entrega*<select name="dia" required><option value="">Seleccionar</option><option>Hoy</option><option>Mañana</option><option>Otro</option></select></label>
+          <label id="day-other-wrap" hidden>Especifica el día*<input name="dia_otro"></label>
+          <label>¿De dónde eres?*<select name="ubicacion" required><option value="">Seleccionar</option><option>Tegucigalpa</option><option>Otro departamento</option></select></label>
+          <label>Vendedor que te atendió*<select name="vendedor" required><option value="">Seleccionar</option><option>Mayra</option><option>Edith</option><option>Rigo</option><option>Otro</option></select></label>
+          <label id="seller-other-wrap" hidden>Nombre del vendedor*<input name="vendedor_otro"></label>
+          <label class="full">Colonia o sector*<select name="direccion" required></select></label>
+          <label class="full">Referencia exacta*<input name="referencia" required placeholder="Ej. frente a Hotel Clarion"></label>
+          <label>Método de pago*<select name="metodo_pago" required><option value="">Seleccionar</option><option>Efectivo</option><option>Transferencia</option></select></label>
+          <label class="honeypot" aria-hidden="true">Sitio web<input name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="order-summary"><div><span>Subtotal</span><strong id="checkout-subtotal">L 0</strong></div><div><span>Envío</span><strong id="checkout-shipping">—</strong></div><div class="grand"><span>Total</span><strong id="checkout-total">L 0</strong></div><small>Envío gratis desde L 2,500.</small></div>
+        <div id="backend-warning" class="backend-warning" hidden>Antes de publicar, pega la URL de Apps Script en <code>config/site-config.js</code>. Mientras tanto, el pedido se enviará por WhatsApp.</div>
+        <button id="submit-order" class="primary-button wide" type="submit">Enviar pedido</button>
+        <p id="order-status" class="order-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
+  <div id="viewer" class="viewer" hidden><button id="viewer-close" class="viewer-close">✕</button><button id="viewer-prev" class="viewer-arrow prev">‹</button><img id="viewer-image" alt="Producto ampliado"><button id="viewer-next" class="viewer-arrow next">›</button><div id="viewer-counter" class="viewer-counter"></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <iframe id="order-frame" name="order-frame" hidden></iframe>
+
+  <script src="config/site-config.js"></script>
+  <script src="shared/shipping-data.js"></script>
+  <script src="shared/catalogo.js"></script>
+</body>
+</html>
