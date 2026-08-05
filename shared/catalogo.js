@@ -26,6 +26,35 @@
     '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
   }[char]));
   const normalize = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const normalizeCategory = value => normalize(value).replace(/\s+/g, ' ').trim();
+
+  function productCategories(product) {
+    let list = [];
+    if (Array.isArray(product?.categories)) {
+      list = product.categories;
+    } else if (typeof product?.categories === 'string') {
+      list = product.categories.split(/[|,;]/g);
+    }
+    list = list
+      .filter(value => typeof value === 'string' && value.trim())
+      .map(value => value.trim());
+    const primary = typeof product?.category === 'string' ? product.category.trim() : '';
+    if (primary && !list.some(value => normalizeCategory(value) === normalizeCategory(primary))) {
+      list.unshift(primary);
+    }
+    const seen = new Set();
+    return list.filter(value => {
+      const key = normalizeCategory(value);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function productBelongsTo(product, category) {
+    const wanted = normalizeCategory(category);
+    return !wanted || productCategories(product).some(value => normalizeCategory(value) === wanted);
+  }
 
   function safeParse(value, fallback = null) {
     try { return JSON.parse(value); } catch (_) { return fallback; }
@@ -61,15 +90,40 @@
     return products.find(product => product.id === id);
   }
 
+  function syncCartWithCatalog() {
+    let changed = false;
+    cart = cart.map(item => {
+      const product = productById(item.id);
+      if (!product) return item;
+      const updated = {
+        ...item,
+        name: product.name,
+        price: Number(product.price) || 0,
+        image: Array.isArray(product.images) ? (product.images[0] || '') : ''
+      };
+      if (updated.name !== item.name || updated.price !== Number(item.price) || updated.image !== item.image) changed = true;
+      return updated;
+    });
+    if (changed) localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  }
+
   async function init() {
     try {
       injectOrderExperience();
+      const fresh = Date.now();
       const [productData, categoryData] = await Promise.all([
-        fetch('data/productos.json').then(response => response.json()),
-        fetch('data/categorias.json').then(response => response.json())
+        fetch(`data/productos.json?v=${fresh}`, { cache: 'no-store' }).then(response => {
+          if (!response.ok) throw new Error(`No se pudo cargar productos.json (${response.status}).`);
+          return response.json();
+        }),
+        fetch(`data/categorias.json?v=${fresh}`, { cache: 'no-store' }).then(response => {
+          if (!response.ok) throw new Error(`No se pudo cargar categorias.json (${response.status}).`);
+          return response.json();
+        })
       ]);
-      products = productData.products || [];
-      categories = categoryData.categories || [];
+      products = Array.isArray(productData.products) ? productData.products : [];
+      categories = Array.isArray(categoryData.categories) ? categoryData.categories : [];
+      syncCartWithCatalog();
       setupHeader();
       fillFilters();
       bind();
@@ -96,9 +150,10 @@
 
   function fillFilters() {
     const select = $('#category-filter');
-    select.innerHTML = '<option value="">Todas las categorías</option>' + categories.map(category =>
-      `<option value="${esc(category.name)}">${esc(category.name)} (${category.count})</option>`
-    ).join('');
+    select.innerHTML = '<option value="">Todas las categorías</option>' + categories.map(category => {
+      const count = products.filter(product => productBelongsTo(product, category.name)).length;
+      return `<option value="${esc(category.name)}">${esc(category.name)} (${count})</option>`;
+    }).join('');
     if (pageCategory) {
       select.value = pageCategory;
       select.disabled = true;
@@ -109,8 +164,8 @@
     const query = normalize($('#search-products').value);
     const category = pageCategory || $('#category-filter').value;
     let list = products.filter(product =>
-      (!category || product.category === category) &&
-      (!query || normalize(product.name + ' ' + product.description.join(' ')).includes(query))
+      productBelongsTo(product, category) &&
+      (!query || normalize(product.name + ' ' + (Array.isArray(product.description) ? product.description.join(' ') : '')).includes(query))
     );
     const sort = $('#sort-products').value;
     if (sort === 'price-asc') list.sort((a, b) => a.price - b.price);
@@ -124,17 +179,19 @@
   }
 
   function card(product) {
-    const image = product.images[0] || '';
+    const images = Array.isArray(product.images) ? product.images : [];
+    const descriptions = Array.isArray(product.description) ? product.description : [];
+    const image = images[0] || '';
     return `<article class="product-card" id="${esc(product.id)}" data-id="${esc(product.id)}">
       <div class="product-media">
         <img src="${esc(image)}" alt="${esc(product.name)}" loading="lazy" decoding="async" data-action="view">
-        <span class="image-count">${product.images.length} foto${product.images.length === 1 ? '' : 's'}</span>
-        ${product.images.length > 1 ? '<div class="image-nav"><button type="button" data-action="prev-image">‹</button><button type="button" data-action="next-image">›</button></div>' : ''}
+        <span class="image-count">${images.length} foto${images.length === 1 ? '' : 's'}</span>
+        ${images.length > 1 ? '<div class="image-nav"><button type="button" data-action="prev-image">‹</button><button type="button" data-action="next-image">›</button></div>' : ''}
       </div>
       <div class="product-body">
-        <span class="category-tag">${esc(product.category)}</span>
+        <span class="category-tag">${esc(pageCategory || productCategories(product).join(' · ') || product.category || 'Otros')}</span>
         <h2>${esc(product.name)}</h2>
-        <p class="product-description">${esc(product.description[0] || '')}</p>
+        <p class="product-description">${esc(descriptions[0] || '')}</p>
         <div class="product-bottom">
           <div class="price">${money(product.price)}</div>
           <div class="card-actions">

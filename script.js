@@ -19,6 +19,44 @@ function normalizeText(value) {
     .trim();
 }
 
+function productCategories(product) {
+  let list = [];
+  if (Array.isArray(product?.categories)) {
+    list = product.categories;
+  } else if (typeof product?.categories === 'string') {
+    list = product.categories.split(/[|,;]/g);
+  }
+  const primary = typeof product?.category === 'string' ? product.category.trim() : '';
+  if (primary) list.unshift(primary);
+  const seen = new Set();
+  return list
+    .filter((value) => typeof value === 'string' && value.trim())
+    .map((value) => value.trim())
+    .filter((value) => {
+      const key = normalizeText(value);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+async function refreshCategoryCounts() {
+  try {
+    const response = await fetch(`data/productos.json?v=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    const products = Array.isArray(data.products) ? data.products : [];
+    categories.forEach((category) => {
+      const wanted = normalizeText(category.name);
+      category.count = products.filter((product) =>
+        productCategories(product).some((value) => normalizeText(value) === wanted)
+      ).length;
+    });
+  } catch (error) {
+    console.warn('No se pudieron actualizar los conteos de categorías.', error);
+  }
+}
+
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add('show');
@@ -170,5 +208,7 @@ document.querySelectorAll('[data-search-link]').forEach((link) => {
 
 document.querySelector('#current-year').textContent = new Date().getFullYear();
 
-fillCategorySelect();
-renderCategories();
+refreshCategoryCounts().finally(() => {
+  fillCategorySelect();
+  renderCategories();
+});
