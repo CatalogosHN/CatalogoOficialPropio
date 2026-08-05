@@ -6,6 +6,7 @@
   const CART_KEY = 'international_items_cart_v2';
   const DRAFT_KEY = 'international_items_checkout_draft_v2';
   const PENDING_KEY = 'international_items_order_pending_v2';
+  const AUTO_REFRESH_MS = 5000;
   const pageCategory = (document.body.dataset.category || '').trim();
 
   let products = [];
@@ -19,6 +20,10 @@
   let responseTimer = null;
   let stateTimer = null;
   let currentRequestId = '';
+  let catalogFingerprint = '';
+  let catalogRemoteMarker = '';
+  let catalogRefreshTimer = null;
+  let catalogRefreshBusy = false;
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const money = value => 'L ' + Number(value || 0).toLocaleString('es-HN', { maximumFractionDigits: 0 });
@@ -107,22 +112,107 @@
     if (changed) localStorage.setItem(CART_KEY, JSON.stringify(cart));
   }
 
+  function makeCatalogFingerprint(productData, categoryData) {
+    return JSON.stringify([
+      Array.isArray(productData?.products) ? productData.products : [],
+      Array.isArray(categoryData?.categories) ? categoryData.categories : []
+    ]);
+  }
+
+  function responseMarker(response) {
+    return [
+      response.headers.get('etag') || '',
+      response.headers.get('last-modified') || '',
+      response.headers.get('content-length') || ''
+    ].join('|');
+  }
+
+  async function fetchRemoteCatalogMarker() {
+    const fresh = Date.now();
+    try {
+      const responses = await Promise.all([
+        fetch(`data/productos.json?verificar=${fresh}`, { method: 'HEAD', cache: 'no-store' }),
+        fetch(`data/categorias.json?verificar=${fresh}`, { method: 'HEAD', cache: 'no-store' })
+      ]);
+      if (responses.some(response => !response.ok)) return '';
+      const marker = responses.map(responseMarker).join('::');
+      return marker.replace(/[|:]/g, '') ? marker : '';
+    } catch (_) {
+      return '';
+    }
+  }
+
+  async function fetchFreshCatalog() {
+    const fresh = Date.now();
+    const [productResponse, categoryResponse] = await Promise.all([
+      fetch(`data/productos.json?actualizar=${fresh}`, { cache: 'no-store' }),
+      fetch(`data/categorias.json?actualizar=${fresh}`, { cache: 'no-store' })
+    ]);
+    if (!productResponse.ok) throw new Error(`No se pudo cargar productos.json (${productResponse.status}).`);
+    if (!categoryResponse.ok) throw new Error(`No se pudo cargar categorias.json (${categoryResponse.status}).`);
+    const [productData, categoryData] = await Promise.all([
+      productResponse.json(),
+      categoryResponse.json()
+    ]);
+    return {
+      productData,
+      categoryData,
+      fingerprint: makeCatalogFingerprint(productData, categoryData),
+      remoteMarker: [responseMarker(productResponse), responseMarker(categoryResponse)].join('::')
+    };
+  }
+
+  function applyCatalogSnapshot(productData, categoryData, announce = false) {
+    const selectedCategory = $('#category-filter')?.value || '';
+    products = Array.isArray(productData?.products) ? productData.products : [];
+    categories = Array.isArray(categoryData?.categories) ? categoryData.categories : [];
+    syncCartWithCatalog();
+    setupHeader();
+    fillFilters();
+    if (!pageCategory && selectedCategory && categories.some(category => normalizeCategory(category.name) === normalizeCategory(selectedCategory))) {
+      $('#category-filter').value = selectedCategory;
+    }
+    render();
+    updateCartUI();
+    updateCheckoutTotals();
+    if (announce) toast('Catálogo actualizado automáticamente ✅');
+  }
+
+  async function refreshCatalogAutomatically(announce = true) {
+    if (catalogRefreshBusy || sending || document.hidden) return;
+    catalogRefreshBusy = true;
+    try {
+      const remoteMarker = await fetchRemoteCatalogMarker();
+      if (remoteMarker && remoteMarker === catalogRemoteMarker) return;
+      const snapshot = await fetchFreshCatalog();
+      catalogRemoteMarker = snapshot.remoteMarker || remoteMarker || catalogRemoteMarker;
+      if (snapshot.fingerprint === catalogFingerprint) return;
+      catalogFingerprint = snapshot.fingerprint;
+      applyCatalogSnapshot(snapshot.productData, snapshot.categoryData, announce);
+    } catch (error) {
+      console.warn('No se pudo comprobar una actualización del catálogo.', error);
+    } finally {
+      catalogRefreshBusy = false;
+    }
+  }
+
+  function startAutomaticCatalogUpdates() {
+    clearInterval(catalogRefreshTimer);
+    catalogRefreshTimer = setInterval(() => refreshCatalogAutomatically(true), AUTO_REFRESH_MS);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) refreshCatalogAutomatically(true);
+    });
+    window.addEventListener('focus', () => refreshCatalogAutomatically(true));
+  }
+
   async function init() {
     try {
       injectOrderExperience();
-      const fresh = Date.now();
-      const [productData, categoryData] = await Promise.all([
-        fetch(`data/productos.json?v=${fresh}`, { cache: 'no-store' }).then(response => {
-          if (!response.ok) throw new Error(`No se pudo cargar productos.json (${response.status}).`);
-          return response.json();
-        }),
-        fetch(`data/categorias.json?v=${fresh}`, { cache: 'no-store' }).then(response => {
-          if (!response.ok) throw new Error(`No se pudo cargar categorias.json (${response.status}).`);
-          return response.json();
-        })
-      ]);
-      products = Array.isArray(productData.products) ? productData.products : [];
-      categories = Array.isArray(categoryData.categories) ? categoryData.categories : [];
+      const snapshot = await fetchFreshCatalog();
+      catalogFingerprint = snapshot.fingerprint;
+      catalogRemoteMarker = snapshot.remoteMarker || '';
+      products = Array.isArray(snapshot.productData.products) ? snapshot.productData.products : [];
+      categories = Array.isArray(snapshot.categoryData.categories) ? snapshot.categoryData.categories : [];
       syncCartWithCatalog();
       setupHeader();
       fillFilters();
@@ -132,6 +222,7 @@
       updateCartUI();
       recoverInterruptedOrder();
       deepLink();
+      startAutomaticCatalogUpdates();
     } catch (error) {
       console.error(error);
       $('#product-grid').innerHTML = '<p>No se pudo cargar el catálogo. Publica la carpeta completa en GitHub Pages.</p>';
