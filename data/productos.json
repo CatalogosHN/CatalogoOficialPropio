@@ -11,10 +11,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/matdot1.jpg",
-        "images/matdot2.jpg",
-        "images/matdot3.jpg",
-        "images/matdot4.jpg"
+        "images/matdot1.jpeg",
+        "images/matdot2.jpeg",
+        "images/matdot3.jpeg",
+        "images/matdot4.jpeg"
       ],
       "description": [
         "Talla: L."
@@ -29,10 +29,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/nbuxdot1.jpg",
-        "images/nbuxdot2.jpg",
-        "images/nbuxdot3.jpg",
-        "images/nbuxdot4.jpg"
+        "images/nbuxdot1.jpeg",
+        "images/nbuxdot2.jpeg",
+        "images/nbuxdot3.jpeg",
+        "images/nbuxdot4.jpeg"
       ],
       "description": [
         "Talla: XL."
@@ -47,10 +47,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/matnbudot1.jpg",
-        "images/matnbudot2.jpg",
-        "images/matnbudot3.jpg",
-        "images/matnbudot4.jpg"
+        "images/matnbudot1.jpeg",
+        "images/matnbudot2.jpeg",
+        "images/matnbudot3.jpeg",
+        "images/matnbudot4.jpeg"
       ],
       "description": [
         "Talla: L."
@@ -65,10 +65,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/matmtcdot1.jpg",
-        "images/matmtcdot2.jpg",
-        "images/matmtcdot3.jpg",
-        "images/matmtcdot4.jpg"
+        "images/matmtcdot1.jpeg",
+        "images/matmtcdot2.jpeg",
+        "images/matmtcdot3.jpeg",
+        "images/matmtcdot4.jpeg"
       ],
       "description": [
         "Talla: XL."
@@ -83,10 +83,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/fotocasc1.jpg",
-        "images/fotocasc2.jpg",
-        "images/fotocasc3.jpg",
-        "images/fotocasc4.jpg"
+        "images/fotocasc1.jpeg",
+        "images/fotocasc2.jpeg",
+        "images/fotocasc3.jpeg",
+        "images/fotocasc4.jpeg"
       ],
       "description": [
         "Talla: L."
@@ -95,16 +95,16 @@
     {
       "id": "producto-141",
       "name": "Cascos Modular NBU Azul Matte DOT",
-      "price": 1800,
+      "price": 1600,
       "category": "Motocicletas",
       "categories": [
         "Motocicletas"
       ],
       "images": [
-        "images/matnbumoddot1.jpg",
-        "images/matnbumoddot2.jpg",
-        "images/matnbumoddot3.jpg",
-        "images/matnbumoddot4.jpg"
+        "images/matnbumoddot1.jpeg",
+        "images/matnbumoddot2.jpeg",
+        "images/matnbumoddot3.jpeg",
+        "images/matnbumoddot4.jpeg"
       ],
       "description": [
         "Talla: XL."
@@ -112,17 +112,17 @@
     },
     {
       "id": "producto-142",
-      "name": "Cascos Modular HNE con Luz LED DOT",
+      "name": "Cascos Modular Fotocromado HNE con Luz LED DOT",
       "price": 1800,
       "category": "Motocicletas",
       "categories": [
         "Motocicletas"
       ],
       "images": [
-        "images/mathnemoddot1.jpg",
-        "images/mathnemoddot2.jpg",
-        "images/mathnemoddot3.jpg",
-        "images/mathnemoddot4.jpg"
+        "images/mathnemoddot1.jpeg",
+        "images/mathnemoddot2.jpeg",
+        "images/mathnemoddot3.jpeg",
+        "images/mathnemoddot4.jpeg"
       ],
       "description": [
         "Talla: L."
@@ -137,10 +137,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/matnbudotmod1.jpg",
-        "images/matnbudotmod2.jpg",
-        "images/matnbudotmod3.jpg",
-        "images/matnbudotmod4.jpg"
+        "images/matnbudotmod1.jpeg",
+        "images/matnbudotmod2.jpeg",
+        "images/matnbudotmod3.jpeg",
+        "images/matnbudotmod4.jpeg"
       ],
       "description": [
         "Talla: XL."
@@ -155,10 +155,10 @@
         "Motocicletas"
       ],
       "images": [
-        "images/mathnemod1dot1.jpg",
-        "images/mathnemod1dot2.jpg",
-        "images/mathnemod1dot3.jpg",
-        "images/mathnemod1dot4.jpg"
+        "images/mathnemod1dot1.jpeg",
+        "images/mathnemod1dot2.jpeg",
+        "images/mathnemod1dot3.jpeg",
+        "images/mathnemod1dot4.jpeg"
       ],
       "description": [
         "Talla: L."
