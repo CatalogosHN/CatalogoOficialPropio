@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-05T04:52:00.894Z",
+  "generatedAt": "2026-08-05T05:18:03.286Z",
   "products": [
     {
       "id": "producto-001",
@@ -17,6 +17,9 @@
         "Batería 100% 🔋, en caja con todos sus accesorios originales. Potencia y elegancia clásica. 📦🔥",
         "256GB para todo, batería al 100% y accesorios completos. Ideal si buscás calidad premium a buen precio. 🚀🍏",
         "Estado impecable, batería 100% y kit completo. Rendimiento confiable y diseño que nunca pasa de moda. 😎⚡"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -37,6 +40,9 @@
         "📱🔥 Samsung S24 Ultra — Potencia extrema con 12 GB RAM, 256 GB de espacio y cámara brutal para fotos y videos de nivel pro. 🚀📸",
         "💎⚡ Diseño premium + rendimiento monstruoso: multitarea sin límites, pantalla espectacular y batería para todo el día. 🔋✨",
         "🎯📷 El flagship definitivo: velocidad ultra rápida, almacenamiento amplio y fotos que parecen de estudio profesional."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -52,6 +58,10 @@
         "¡Decoración NAVIDEÑA nivel PRO! 🎅✨ Este Santa inflable mide 1.8 metros, tan grande como una persona. ¡Llama la atención desde lejos!",
         "Con luces internas que se ven hermosas de noche 🌟🏠. Ideal para salas, porches, negocios, jardines o eventos navideños.",
         "Instalación súper fácil: lo conectás y se infla solo 🎉🔌. Material resistente, colores vivos y calidad espectacular. ¡Hacé tu casa la más bonita del barrio!"
+      ],
+      "categories": [
+        "Hogar",
+        "Otros"
       ]
     },
     {
@@ -67,6 +77,10 @@
         "👶📱 Diseñada especialmente para niños. Resistente, colorida y fácil de usar. Ideal para aprender, jugar y entretenerse sin preocupaciones 😍",
         "📚🎮 Pantalla perfecta para videos, juegos y apps educativas. Protección infantil y funda ultra resistente para el uso diario 💪✨",
         "🎁🔥 Tablet Fire 7 Kids 16GB + cargador rápido. Práctica, segura y lista para horas de diversión. ¡A los niños les encanta y a los padres también! 😎💙"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Juguetes"
       ]
     },
     {
@@ -85,6 +99,10 @@
         "Hermoso diseño con detalles dorados, ideal para dar un toque elegante y festivo a tu árbol o guirnaldas.",
         "Tamaño perfecto (15 cm) para destacar entre las ramas y combinar con luces o esferas.",
         "Material resistente y duradero, con acabado suave tipo terciopelo y hojas doradas brillantes."
+      ],
+      "categories": [
+        "Hogar",
+        "Otros"
       ]
     },
     {
@@ -103,6 +121,10 @@
         "Incluye estrella decorativa para coronar tu árbol y 100 esferas surtidas en tonos rojo, dorado y verde.",
         "Dale vida a tu árbol, ideal para decoraciones grandes o medianas con un estilo navideño clásico y elegante.",
         "Variedad de acabados: mate, brillantes y con glitter. Resistentes, ligeras y fáciles de colocar."
+      ],
+      "categories": [
+        "Hogar",
+        "Otros"
       ]
     },
     {
@@ -118,6 +140,9 @@
         "Diseño festivo y divertido — Transforma tu casco en un casco navideño con gorro de Santa y nariz de reno.",
         "Material de peluche suave — Cálido, cómodo y fácil de colocar, no daña la pintura del casco.",
         "Ideal para motorizados navideños — Perfecto para desfiles, regalos o simplemente llevar el espíritu de Navidad en cada recorrido."
+      ],
+      "categories": [
+        "Motocicletas"
       ]
     },
     {
@@ -133,6 +158,10 @@
         "🎄✨ Dale un toque mágico a tu árbol con este hermoso pie navideño talla L, diseño premium y súper llamativo.",
         "🦌❤️ Su patrón navideño con reno y detalles festivos transforma cualquier sala en un ambiente cálido y elegante.",
         "🎁🚚 Ideal para decorar y cubrir cables o bases—¡perfecto para fotos! Envíos a TODO Honduras."
+      ],
+      "categories": [
+        "Hogar",
+        "Otros"
       ]
     },
     {
@@ -147,6 +176,12 @@
         "🚗📷 Estaciona sin miedo ni sorpresas. Visión clara, ángulo amplio y encendido automático al poner reversa. ¡Una vez la pruebas, no vuelves atrás! 😎✨",
         "👀💡 Imagen nítida de día y de noche, resistente y lista para cualquier clima. Evita golpes, rayones y malos momentos. ¡Tu carro lo agradece! 🚘🛡️",
         "🔌📺 Conecta, activa y listo. Control total al retroceder, incluso en espacios cerrados. Es esa mejora que no sabías que NECESITABAS… hasta ahora 🔥😍"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Tecnología y celulares",
+        "Seguridad"
       ]
     },
     {
@@ -162,6 +197,11 @@
         "🛵🧤 Protege tus manos del sol, el viento y el desgaste. Agarre firme, diseño deportivo y comodidad desde el primer uso. ¡Se sienten brutales! 😎💥",
         "☀️🛡️ Tapa sol integrado + protección reforzada en nudillos. Maneja con confianza en ciudad o carretera. Una vez los usas… no hay vuelta atrás 🔥🚀",
         "🤍🖤 Ligeros, resistentes y con ajuste perfecto. Más control, más comodidad y más facha en tu moto. ¡Compra inteligente! 😍👌"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -177,6 +217,11 @@
         "🏍️🪢 Asegura tu moto, carga o casco en segundos. Resistente, elástica y confiable. ¡La tranquilidad que todo motero necesita! 💪😎",
         "🔒🚀 Ideal para viajes, mandados o parqueos rápidos. No se afloja, no falla y aguanta lo que le pongas. ¡Una vez la usas, no sales sin ella! 🔥👌",
         "🛵🧲 Fácil de usar, compacta y ultra resistente. Perfecta para el día a día o viajes largos. Compra inteligente, compra seguro 😍🔥"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -192,6 +237,9 @@
         "🚗📱 Mantén tu celular firme y visible mientras conduces. Giro 360°, ajuste perfecto y cero vibraciones. ¡Una vez lo usas, no manejas sin él! 😎✨",
         "🧲🛣️ Ideal para GPS, llamadas y música sin distraerte. Se adapta a cualquier ángulo y se instala en segundos. Más control, menos estrés 🔥👌",
         "📲🔒 Sujeción fuerte, diseño moderno y ajuste universal. Convierte cada viaje en una experiencia más cómoda y segura. ¡Lo necesitas hoy! 😍🚀"
+      ],
+      "categories": [
+        "Autos"
       ]
     },
     {
@@ -207,6 +255,9 @@
         "💾⚡ Pasa tus archivos en segundos. Compacto, rápido y compatible con todo. ¡Conéctalo y listo, sin complicaciones! 😎👌",
         "📲💻 Ideal para celulares, cámaras y laptops. Llévalo a donde quieras y ten tus datos siempre a la mano. ¡Un básico que no puede faltar! 🔥😍",
         "🔌💾 Diseño resistente, colores llamativos y uso inmediato. Aprovecha la OFERTA antes que se agote 😱🔥"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -223,6 +274,9 @@
         "⚡📱 Más potencia, menos espera. Carga tus dispositivos en tiempo récord con tecnología de carga rápida segura. ¡Conéctalo y siente la diferencia! 😎🚀",
         "🔌🔋 Carga dos equipos al mismo tiempo sin perder potencia. Ideal para casa, oficina o viajes. Un solo cargador, cero preocupaciones 🔥👌",
         "📲⚡ Diseño moderno, protección inteligente y rendimiento real de 66W. El cargador que tu celular MERECE 😍🔥"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -238,6 +292,11 @@
         "💡🎶 Convierte cualquier espacio en una fiesta. Luces RGB que bailan al ritmo de tu música y sonido envolvente desde tu celular. ¡Enciéndelo y que empiece el show! 😍🔥",
         "📱🌈 Controla colores, brillo y música vía Bluetooth. Ideal para cuartos, fiestas, reuniones o relajarte con tu playlist favorita. ¡Imposible no quererlo! 😎✨",
         "🔊💡 Diseño moderno, colores vibrantes y audio potente. El regalo perfecto o el upgrade que tu casa necesita YA 🔥🤩"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Entretenimiento"
       ]
     },
     {
@@ -253,6 +312,10 @@
         "⌚💦 Diseñado para el día a día y la aventura. Resiste salpicaduras, entrenamientos y uso rudo sin perder estilo. ¡Póntelo y olvídate del resto! 😎💪",
         "⏱️📅 Hora, fecha, alarma y cronómetro en un solo diseño deportivo. Ideal para trabajo, ejercicio o uso diario. Funcionalidad total en tu muñeca 🔥👌",
         " 🖤⌚ Diseño moderno, pantalla clara y ajuste cómodo. El reloj perfecto para quien exige durabilidad y presencia. ¡Lo necesitas hoy! 😍🔥"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Herramientas"
       ]
     },
     {
@@ -267,6 +330,10 @@
         "⌚⚡ Diseño moderno, lectura clara y estilo minimalista. Perfecto para el día a día, cómodo y fácil de usar. ¡Simplemente póntelo y listo! 😎👌",
         "⏰🖤 Hora exacta con solo un vistazo. Ideal para trabajo, estudio o uso diario. Calidad que sorprende a precio de OFERTA 🔥😍",
         "⌚✨ Ligero, cómodo y con pantalla LED llamativa. Aprovecha antes que se agote 😱🔥"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Herramientas"
       ]
     },
     {
@@ -281,6 +348,10 @@
         "⌚🧒 Diseño súper tierno de Stitch que encanta a los peques. Hora clara, colores llamativos y comodidad total para usar todos los días 😍",
         "💙⏰ Ideal para escuela, paseos o regalo. Ligero, resistente y fácil de usar. ¡A los niños les encanta desde el primer momento! 🥰✨",
         "🎁⌚ Bonito, práctico y lleno de estilo. Sorprende a tu hijo o hija con un reloj que querrá usar siempre 😍🔥"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Juguetes"
       ]
     },
     {
@@ -295,6 +366,11 @@
         "🏍️🕶️ Bloquea viento, polvo y sol mientras manejas con total comodidad. Visión clara y ajuste firme para cada recorrido. ¡Maneja con seguridad y estilo! 😎💨",
         "🛡️🌪️ Lentes resistentes, cómodos y compatibles con casco. Ideales para ciudad o carretera. Una vez las pruebas, no sales sin ellas 🔥👌",
         "🕶️🏍️ Diseño deportivo, protección real y look profesional. El accesorio que todo motero NECESITA 😍🔥"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -312,6 +388,11 @@
         "🏍️🛡️ Protección total contra polvo, viento y sol. Diseño agresivo, visión clara y ajuste firme. ¡Maneja con presencia y seguridad! 😎🔥",
         "🌪️🕶️ Lentes resistentes + máscara respirable para rutas largas o uso diario. Comodidad y estilo en cada kilómetro. ¡Imposible no quererla! 🔥👌",
         "🖤🏍️ Look táctico, ajuste perfecto y protección completa. Eleva tu casco y tu experiencia al manejar 😍🔥"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -328,6 +409,11 @@
         "💀🏍️ Impone respeto en la carretera. Diseño brutal tipo calavera con lentes espejo que protegen del sol, viento y polvo. ¡No pasas desapercibido! 😎🔥",
         "🕶️💀 Look agresivo + protección real. Ideal para riders que quieren seguridad y presencia única. Póntela y siente el poder en cada kilómetro ⚡🏍️",
         "🖤🔥 Ajuste cómodo, lentes llamativos y diseño de impacto. Aprovecha la OFERTA antes que se agote 😱👌"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -343,6 +429,11 @@
         "🔑😍 Súper tiernos, coloridos y llenos de personalidad. Perfectos para llaves, mochilas o regalar. ¡Cada uno es imposible de no amar! 🥰",
         "💙🔑 Diferentes poses y accesorios que enamoran a primera vista. Ideal para fans de Stitch grandes y pequeños. ¡Querrás más de uno! 😍🔥",
         "🎁✨ Bonitos, resistentes y súper llamativos. Regala ternura o consiéntete con estos llaveros únicos de Stitch 😍💙"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -358,6 +449,11 @@
         "🔑😍 Diseños tiernos y coloridos que roban sonrisas. Perfectos para llaves, mochilas o regalar. ¡Imposible elegir solo uno! 🥰",
         "🐼💖 Pequeños, resistentes y llenos de encanto. Ideales para niños, jóvenes y amantes de lo cute. ¡Te enamoran al instante! 😍🔥",
         "🎁✨ Variedad de colores y estilos que combinan con todo. Consiente o sorprende con estos lindos ositos panda 😍🐼"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -373,6 +469,11 @@
         "🔑😍 Personajes que marcaron tu infancia ahora contigo todos los días. Súper coloridos, tiernos y llenos de nostalgia. ¡Te enamoran al instante! 💙",
         "🧸🚀 Ideales para llaves, mochilas o regalar. Forky, Woody y más personajes que sacan sonrisas a grandes y pequeños 😍🔥",
         "🎁✨ Resistentes, llamativos y únicos. Llévate tu personaje favorito antes que se agoten 😱💫"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -388,6 +489,11 @@
         "🔑💥 Lleva a tus héroes favoritos contigo todos los días. Súper llamativos, resistentes y llenos de actitud. ¡Imposible no quererlos! 😎",
         "🦸‍♂️💪 Iron Man, Hulk, Capitán América y más en diseños coloridos que destacan en llaves, mochilas o bolsos. ¡Perfectos para fans de Marvel! 😍🔥",
         "💥🔑 Detalle único, duradero y con estilo héroe. Elige tu favorito o llévalos todos antes que se agoten 😱✨"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -403,6 +509,11 @@
         "🔑🌈 Alegría, Tristeza, Furia y más personajes en diseños súper coloridos y tiernos. Perfectos para llaves, mochilas o regalar. ¡Te sacan una sonrisa al instante! 😍",
         "💖🔑 Ligeros, resistentes y llenos de personalidad. Ideales para niños, jóvenes y fans de Intensamente. ¡Querrás coleccionarlos todos! 🔥🥰",
         "✨🌈 Regala emoción, color y diversión en un solo accesorio. Elige tu personaje favorito antes que se agoten 😱💫"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -418,6 +529,11 @@
         "🔑😍 Súper tiernos, coloridos y con un diseño que roba miradas. Ideales para llaves, mochilas o regalar. ¡Cada uno es una tentación! 🥰",
         "🌈💖 Diferentes colores y expresiones que enamoran al instante. Ligeros, resistentes y perfectos para coleccionar 😍🔥",
         "🎁✨ Bonitos, originales y únicos. Aprovecha la VARIEDAD y elige tu favorito antes que se agoten 😱🐰"
+      ],
+      "categories": [
+        "Hogar",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -433,6 +549,9 @@
         "💻🚀 Mejora tu conexión al instante. Alta señal, navegación fluida y cero cortes. ¡Conéctalo y disfruta internet estable! 😎",
         "📡💥 Ideal para PC o laptop. Banda 2.4 GHz, instalación súper fácil y rendimiento confiable. ¡Perfecto para casa u oficina! 👌🔥",
         "🔌📶 Compacto, potente y práctico. La solución rápida para mejorar tu WiFi sin gastar de más 😍"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -449,6 +568,9 @@
         "🏠🚀 Amplía tu WiFi y despídete de las zonas sin señal. Conexión estable, rápida y confiable para toda la casa. ¡Notarás la diferencia desde el primer día! 😎",
         "📡💥 Ideal para hogares y oficinas. Antenas potentes, fácil configuración y rendimiento constante para navegar, ver videos y trabajar sin interrupciones 👌🔥",
         "🔌📶 Marca Tenda reconocida por su calidad. Mejora tu red WiFi sin complicaciones ni gastos extra 😍"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -466,6 +588,9 @@
         "¡Dile adiós al asiento mojado! 💦🔥 Este forro tipo cuero ultra impermeable mantiene tu moto siempre lista, aunque caiga un diluvio.",
         "Queda PERFECTO 😍 gracias a su ajuste elástico que abraza el asiento y no se mueve ni en carreteras malas. ¡Comodidad y estilo en uno! 🏍️✨",
         "Material grueso, resistente y con acabado premium 💪🖤. Protege del sol, polvo, raspones y lluvia… ¡tu asiento dura AÑOS más!"
+      ],
+      "categories": [
+        "Motocicletas"
       ]
     },
     {
@@ -483,6 +608,10 @@
         "Control NUEVO para Roku 📺✨ — funciona al instante, sin configuraciones complicadas. ¡Con botones directos a Netflix, YouTube, Disney+ y Hulu! 😍🔥",
         "Diseño cómodo, rápido y preciso 🎯👌. Cambia volumen, retrocede, adelanta y pausa con un solo toque. ¡Tu Roku vuelve a la vida!",
         "Precio súper oferta: solo 70 LPS 😱💥. Entregas a domicilio y envíos a toda Honduras 🚚🇭🇳. ¡No te quedes sin el tuyo!"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar"
       ]
     },
     {
@@ -499,6 +628,10 @@
         "Pantalla gigante de 58 pulgadas con resolución 4K Ultra HD 📺✨. Vive el fútbol, películas y juegos con colores más vivos y detalles que impresionan.",
         "Tecnología Dolby Vision + Escalador 4K con IA 🤖🎥 — imagen más brillante, suave y realista. ¡La misma marca patrocinadora oficial de la FIFA!",
         "Producto nuevo y sellado, modelo 2024 ⭐. Envío GRATIS a todo Honduras 🇭🇳🚚. ¡Llévatela hoy y convierte tu sala en un cine!"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar"
       ]
     },
     {
@@ -515,6 +648,10 @@
         "Smart TV Hisense 32” con sistema VIDAA: rápido, moderno e ideal para Netflix, YouTube, Prime Video y más 📺✨. ¡Colores vivos y audio nítido!",
         "Producto nuevo, sellado de fábrica 📦💯. Incluye 6 meses de garantía para que compres con total confianza. Perfecta para cuarto o sala.",
         "Envío GRATIS a todo Honduras 🇭🇳🚚. Fácil de instalar, ligera y lista para usar. ¡Conéctala y disfruta tu contenido favorito al instante!"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar"
       ]
     },
     {
@@ -530,6 +667,11 @@
         "¡Diversión sin límites! 🎨✨ Los niños dibujan con colores brillantes y borran con un toque. Ideal para creatividad, juegos y aprendizaje.",
         "Pantalla LCD de 8.5” súper liviana y cómoda 🧒📘. Perfecta para llevar a la escuela, viajes o usar en casa sin gastar papel.",
         "Incluye lápiz, modo bloqueo y batería de larga duración 🔒🔋. Un regalo útil, educativo y entretenido que les encanta a todos los peques."
+      ],
+      "categories": [
+        "Hogar",
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -546,6 +688,10 @@
         "Disfrutá música nítida y llamadas claras mientras manejás 🚀🎧. El K06 trae sonido Hi-Fi, botones grandes y hasta 72 horas de batería REAL.",
         "Resistente al agua 🌧️💦, Bluetooth 6.0 súper estable y micrófono doble (suave + rígido). ¡Escuchás y te escuchan perfecto incluso con casco cerrado!",
         "Instalación rápida con doble montaje 🔧✨. Ideal para viajes largos, mototaxistas, repartidores y motociclistas que quieren andar conectados y seguros."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -563,6 +709,9 @@
         "¡25g de proteína por scoop para músculo puro! 💪🔥 ISO100 es de absorción rápida, ideal para después del gym o para empezar tu día con energía.",
         "Textura suave, sabor tipo pastel de cumpleaños 🎂🤤 y solo 120 calorías por porción. ¡Disfrutá delicioso SIN remordimientos!",
         "Fórmula premium con 5.5g de BCAA y 2.6g de Leucina 💥. Cero grasas trans, bajísima azúcar y perfecta para definición o aumento limpio."
+      ],
+      "categories": [
+        "Otros"
       ]
     },
     {
@@ -579,6 +728,9 @@
         "Carga tu teléfono hasta 4 – 6 veces sin preocuparte por quedarte sin energía. Ideal para viajes, trabajo o emergencias.",
         "Muestra el porcentaje exacto de batería, para que siempre sepas cuánta carga tienes disponible.",
         "Acabado elegante en colores pastel (rosa y celeste) con textura antideslizante. Incluye cable USB y linterna LED integrada."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -593,6 +745,11 @@
         "Fabricado con tela elástica y transpirable que se ajusta perfectamente al rostro sin incomodar o rayar.",
         "Ideal para motos, ciclismo, deportes al aire libre o trabajos donde necesites cubrirte del sol, viento o polvo.",
         "Puede usarse como máscara completa, gorro o cuello térmico. Ligero, duradero y fácil de lavar."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Ropa y calzado",
+        "Herramientas"
       ]
     },
     {
@@ -609,6 +766,10 @@
         "Disfruta tus películas, series o juegos con calidad HD y colores vivos, incluso en espacios con poca luz.",
         "Conecta tu PS4/PS5, Nintendo Switch, laptop, celular, USB o TV Stick fácilmente gracias a sus múltiples entradas (USB, AV, audio y más).",
         "Diseño portátil, ligero y fácil de transportar. Ideal para noches de cine, presentaciones o viajes."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -623,6 +784,11 @@
         "Se enrosca como un foco común y se conecta al WiFi en minutos mediante la app Yi IOT.",
         "Cámara giratoria 360° con calidad Full HD, visión nocturna y detección de movimiento para no perder ningún detalle.",
         "Mira en vivo, graba y recibe alertas directamente desde tu smartphone, estés donde estés no importa que pais."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -638,6 +804,11 @@
         "Vigila tu casa, negocio o patio con visión Full HD, detección de movimiento y visión nocturna.",
         "Se controla desde tu celular por app, con audio bidireccional y alertas en tiempo real.",
         "Ideal para exterior, impermeable y con rotación de 360° para cubrir cada ángulo sin puntos ciegos."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -652,6 +823,11 @@
         "Captura tus aventuras con perspectiva real desde el pecho, ideal para ciclismo, motos, senderismo, deportes extremos y más.",
         "Arnés elástico, ajustable y ligero, se adapta perfectamente a cualquier tamaño y garantiza libertad de movimiento.",
         "Compatible con GoPro, cámaras deportivas, SJCam, Insta360 y similares. Incluye soporte y tornillo de montaje."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -667,6 +843,9 @@
         "Carga tu iPhone del 0% al 50% en solo 30 minutos gracias a la tecnología Power Delivery (PD).",
         "Fabricado con materiales de alta calidad, resistente al calor y compatible con todos los modelos de iPhone con entrada Lightning.",
         "Todo en un solo paquete, listo para usar en casa, la oficina o viajes."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -685,6 +864,11 @@
         "Ojos LED controlables desde tu celular por app — ¡personaliza colores, efectos y animaciones únicas!",
         "Versión grande,para laptop u otros objetos personales. Ideal para motociclistas o viajes.",
         "Mantén tus luces LED y dispositivos siempre cargados donde vayas."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -701,6 +885,9 @@
         "Elimina las zonas sin señal y mejora la conexión en dormitorios, terrazas u oficinas.",
         "Transmite hasta 300 Mbps en 2.4 GHz, ideal para streaming, videollamadas y juegos online.",
         "Solo conéctalo y configúralo en minutos. Compatible con cualquier móvil, módem o router WiFi."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -717,6 +904,10 @@
         "Rastrea vehículos, personas o mascotas desde tu celular con precisión en tiempo real.",
         "Se adhiere fácilmente a cualquier superficie metálica, ideal para autos, motos o equipaje.",
         "Alertas de movimiento, grabación de voz y batería de larga duración. Compatible con tarjeta SIM y app de seguimiento."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Seguridad"
       ]
     },
     {
@@ -734,6 +925,10 @@
         "Localiza tu vehículo o persona en tiempo real y revisa historial de rutas, velocidad, hora y distancia recorrida.",
         "Rastreo estable y continuo con batería de larga duración y carga rápida por USB.",
         "Se adhiere fácilmente a cualquier superficie. Ideal para autos, motos, camiones o uso personal."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Seguridad"
       ]
     },
     {
@@ -751,6 +946,10 @@
         "Muestra el nivel de batería de cada auricular y del estuche en tiempo real.",
         "Tecnología Bluetooth 5.3 con audio nítido, graves profundos y conexión sin cortes.",
         "Hasta 5 horas de uso continuo y más de 140 horas en modo standby con su estuche cargador."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -765,6 +964,10 @@
         "Vidrio templado ultra duro que protege tu pantalla contra golpes, caídas y rayones.",
         "Mantiene la calidad original de la imagen y el brillo de tu consola sin afectar la sensibilidad táctil.",
         "Sin burbujas, se ajusta perfectamente y es compatible con fundas y docks."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Otros"
       ]
     },
     {
@@ -784,6 +987,9 @@
         "Expande tu laptop o PC con 7 puertos USB para conectar mouse, teclado, memorias, impresoras y más.",
         "Cada puerto tiene su propio botón con luz LED — enciende o apaga sin desconectar tus dispositivos.",
         "Protección contra sobrecarga y cortocircuito. Disponible en color negro o blanco."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -800,6 +1006,10 @@
         "Incluye 115 piezas con puntas magnéticas y herramientas especiales para reparar celulares, consolas, laptops, relojes y más.",
         "Mango ergonómico, antideslizante y extensible para trabajos precisos y cómodos.",
         "Viene en estuche resistente, ideal para técnicos, aficionados o uso en casa."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Herramientas"
       ]
     },
     {
@@ -815,6 +1025,10 @@
         "Protege tu cámara al máximo: Funda de silicona resistente a golpes, rayones y polvo.",
         "Vidrios templados incluidos: Pantalla y lente siempre seguros con protección anti-rayaduras y claridad total.",
         "Todo en un solo kit: Incluye tapa de lente, correa de mano, limpiadores y adhesivos antipolvo. Ideal para aventuras y uso diario"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -829,6 +1043,10 @@
         "Resiste hasta 45 metros de profundidad, ideal para buceo, surf, natación o lluvia intensa.",
         "Evita daños por agua, polvo o golpes sin afectar la calidad de video ni el audio.",
         "Ajuste perfecto para GoPro Hero 8 con cierre hermético y lente ultra transparente para capturas nítidas."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -845,6 +1063,10 @@
         "Resistente hasta 45 m de profundidad, perfecta para buceo, surf, snorkel o lluvia intensa.",
         "Evita daños por agua, polvo y golpes sin afectar la claridad de imagen ni el rendimiento de tu cámara.",
         "Ajuste perfecto para modelos GoPro 9, 10, 11 y 12. Fabricada en material resistente con cierre hermético y lente transparente HD."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -861,6 +1083,10 @@
         "Versión 2024 con Bluetooth 5.3: Conexión más estable, sonido estéreo HD y micrófono con cancelación de ruido.",
         "Escucha música, responde llamadas y comunícate con otros pilotos fácilmente mientras conduces.",
         "luces RGB: Hasta 16 modos de iluminación y batería de larga duración (hasta 25 h de uso y 300 h en espera)."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -879,6 +1105,11 @@
         "Carga inteligente: Detecta el nivel de batería y ajusta la corriente automáticamente para una carga rápida y segura.",
         "Ideal para autos, motos, camionetas o baterías de 12V tipo plomo-ácido, AGM o gel.",
         "Diseño práctico: Indicadores LED de carga, Solo conéctalo y listo."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -893,6 +1124,9 @@
         "Gran capacidad: 128GB de espacio para guardar miles de canciones, archivos, fotos o videos.",
         "Plug & Play: Solo conéctala a tu carro, bocina o computadora y disfruta de tu música favorita al instante",
         "Diseño giratorio y resistente: Cuerpo metálico con rotación 360°, compacta y duradera para uso diario."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -908,6 +1142,9 @@
         "Velocidades de lectura de hasta 100 MB/s para grabar, transferir o reproducir sin interrupciones.",
         "Ideal para celulares, cámaras, tablets, drones o consolas. Incluye adaptador SD y lector USB.",
         "SanDisk, líder mundial en almacenamiento, garantiza durabilidad y protección contra agua, golpes y rayos X."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -927,6 +1164,9 @@
         "Precisión extrema con hasta 25,600 DPI y respuesta inmediata, ideal para gamers exigentes.",
         "11 botones programables: Personaliza tus comandos, macros y sensibilidad para cada juego o tarea.",
         "Diseño ergonómico y RGB Lightsync: Iluminación personalizable y pesos ajustables para un control total y comodidad prolongada."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -946,6 +1186,11 @@
         "Réplica fiel de la legendaria Kawasaki Ninja, con acabados precisos en metal y plástico de alta calidad.",
         "Ideal para exhibir en vitrinas, escritorios o como regalo para amantes de las motos.",
         "Base sólida con placa decorativa para mantener la moto estable y lucirla con estilo."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -964,6 +1209,12 @@
         "Captura tus recorridos en moto, bicicleta, caminatas o deportes con vista real desde el pecho.",
         "Adaptadores incluidos para cámaras de acción, GoPro y celulares de distintos tamaños.",
         "Arnés elástico, resistente y fácil de colocar, pensado para grabaciones estables y sin movimiento."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Tecnología y celulares",
+        "Herramientas"
       ]
     },
     {
@@ -979,6 +1230,10 @@
       "description": [
         "Carga dos mandos a la vez: Diseñada para controles DualSense, permite recargar ambos al mismo tiempo en solo 3.5 a 4 horas.",
         "Conexión tipo C y LED indicador: Conector magnético preciso y luces que muestran el estado de carga de cada control."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -996,6 +1251,9 @@
         "Con 200 libras de tensión real, diseñado para quienes buscan potencia y agarre de nivel avanzado.",
         "Estructura 100% metálica con empuñaduras antideslizantes, hecha para durar toda la vida.",
         "Ideal para mejorar fuerza, antebrazos, muñecas y agarre en deportes o entrenamiento de alto rendimiento."
+      ],
+      "categories": [
+        "Otros"
       ]
     },
     {
@@ -1014,6 +1272,9 @@
         "Incluye 32 puntas magnéticas diferentes para reparar celulares, relojes, consolas, laptops y más.",
         "Mango ergonómico y antideslizante: Facilita el agarre y precisión en cada uso, ideal para trabajos delicados.",
         "Estuche resistente, ligero y fácil de transportar. Perfecto para técnicos o uso doméstico."
+      ],
+      "categories": [
+        "Herramientas"
       ]
     },
     {
@@ -1030,6 +1291,10 @@
         "Tecnología Bluetooth 5.1 con llamadas nítidas.",
         "Además de cargar los audífonos, funciona como powerbank para tu celular.",
         "Pantalla digital inteligente: Muestra el nivel de batería en tiempo real para que nunca te quedes sin energía."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -1044,6 +1309,9 @@
         "Compatibilidad universal: Incluye adaptadores para iPhone (Lightning) y Android (Tipo C).",
         "Sonido nítido y sin ruidos: Ideal para grabar videos, entrevistas, TikToks, reels o transmisiones en vivo.",
         "Conexión instantánea: Plug & Play sin apps ni configuraciones, con autonomía de hasta 8 horas continuas."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1063,6 +1331,9 @@
         "Carga todos tus dispositivos: Compatible con Android, iPhone, tablets y más, salida de hasta 100W.",
         "Energía solar y digital display: Se recarga con el sol e incluye pantalla inteligente con porcentaje de carga.",
         "Ultra capacidad y resistencia: Perfecto para viajes, campamentos o emergencias — ¡olvídate de quedarte sin batería!"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1079,6 +1350,9 @@
         "Hasta 10x más rápido que un disco duro tradicional: arranque, carga y transferencia en segundos.",
         "960GB para tus juegos, programas, archivos o sistema operativo.",
         "Nuevo y sellado de fábrica: garantía de calidad Kingston."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1102,6 +1376,10 @@
         "Arma 6 modelos diferentes (carros, helicóptero y más) con las mismas piezas.",
         "Despierta la imaginación: Ideal para niños y niñas que aman construir y crear sus propias aventuras.",
         "Material resistente y colores vibrantes: Compatible con bloques tipo Lego."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1121,6 +1399,10 @@
         "Conexión doble Bluetooth 5.3: Permite hablar entre dos motociclistas o escuchar música y llamadas al mismo tiempo.",
         "Micrófono duro ideal para cascos cerrados o abiertos, con audio nítido incluso a alta velocidad.",
         "Batería de larga duración y luces LED RGB con estilo moderno. Incluye todo el kit de instalación (clips, cables y adhesivos)."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1138,6 +1420,9 @@
         "Sensor óptico de 6400 DPI reales: precisión milimétrica para juegos de alto rendimiento.",
         "Diseño ergonómico clásico Razer, ideal para largas sesiones de juego sin fatiga.",
         "5 botones programables y construcción duradera con switches de alta calidad."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1153,6 +1438,9 @@
         "Incluye 3 gorros ideales para combinar con cualquier outfit.",
         "Material suave y elástico, perfecto para proteger la cabecita del bebé del frío.",
         "Disponible en tallas: 0–6 meses y 1–2 años."
+      ],
+      "categories": [
+        "Ropa y calzado"
       ]
     },
     {
@@ -1172,6 +1460,9 @@
         "Pantalla curva FHD (1920×1080) con tecnología Fast HVA para colores más vivos y realismo total.",
         "Frecuencia ultra rápida de 240 Hz y 1 ms de respuesta, ideal para shooters y eSports.",
         "Compatibilidad HDR10 y cobertura de color 125% sRGB para una experiencia visual impresionante, con base estable y bordes delgados."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1187,6 +1478,11 @@
         "Rotación 360° y visión nocturna HD, vigila cada rincón de tu hogar día y noche.",
         "Control desde tu celular, habla y escucha en tiempo real con la app YI IOT.",
         "Resistente a lluvia y sol, perfecta para exteriores, fácil de instalar y conectar."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -1204,6 +1500,11 @@
         "Cobertura total 360°, doble lente inteligente que graba cada ángulo sin dejar puntos ciegos.",
         "Control desde tu celular, mira en vivo, escucha y habla en tiempo real desde la app.",
         "Instalación fácil tipo bombillo, se conecta directo al WiFi sin cables ni técnicos."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -1222,6 +1523,10 @@
         "Sonido claro y potente, habla con tu compañero o escucha música mientras conduces sin interrupciones.",
         "Bluetooth estable y multifunción, atiende llamadas, cambia canciones o activa el asistente de voz con un solo toque.",
         "Batería de larga duración, hasta 7 días de uso continuo, ideal para viajes largos y aventuras sobre dos ruedas."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1237,6 +1542,9 @@
         "Orden inmediato, guarda ropa interior, calcetines y brasieres en compartimientos separados y visibles.",
         "Diseño elegante y transpirable, hecho con tela resistente y malla ventilada para mantener todo limpio y fresco.",
         "Ahorra espacio, ideal para cajones, closets o maletas — ¡adiós al desorden y al estrés al buscar tu ropa!"
+      ],
+      "categories": [
+        "Ropa y calzado"
       ]
     },
     {
@@ -1255,6 +1563,11 @@
         "Doble cámara HD gran angular, graba y fotografía desde ángulos espectaculares con calidad profesional.",
         "Vuelo estable y fácil de controlar, gracias a su sensor de presión de aire, ideal para principiantes y expertos.",
         "Incluye batería recargable y estuche, todo lo que necesitas para disfrutar largas sesiones de vuelo y grabación."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1273,6 +1586,10 @@
         "Restaura y recarga tu batería fácilmente, con tecnología Smart Pulse Repair que recupera baterías dañadas o descargadas.",
         "Pantalla LCD inteligente, muestra voltaje, temperatura y modo de carga en tiempo real para un control total.",
         "Compatible con autos, motos y camiones, ideal para mantener tus vehículos siempre listos — compacto, potente y seguro."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos"
       ]
     },
     {
@@ -1290,6 +1607,9 @@
         "Tamaño gigante 80x30 cm, espacio perfecto para teclado y ratón, ideal para setups gaming o trabajo.",
         "Luces RGB multicolor, con varios modos de iluminación que puedes cambiar con un solo toque.",
         "Superficie antideslizante y suave, garantiza precisión, comodidad y estilo en cada partida."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1304,6 +1624,11 @@
         "Diseño elegante y brillante, incluye accesorios como lo ves, ideal para sorprender con estilo.",
         "Acabado premium, con detalles dorados y piedras decorativas que reflejan lujo y feminidad.",
         "Listo para regalar, perfecto para cumpleaños, aniversario o Día de la Madre."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos",
+        "Otros"
       ]
     },
     {
@@ -1319,6 +1644,9 @@
         "Resistencia ajustable de 5 kg a 60 kg, ideal para todos los niveles: desde principiantes hasta atletas.",
         "Contador integrado, registra automáticamente cada repetición para medir tu progreso con precisión.",
         "Diseño ergonómico y antideslizante, cómodo y duradero para entrenamiento diario en casa, oficina o gimnasio."
+      ],
+      "categories": [
+        "Otros"
       ]
     },
     {
@@ -1336,6 +1664,9 @@
         "Carga solar y doble salida USB, ideal para mantener todos tus dispositivos con energía en cualquier lugar.",
         "Incluye linterna LED súper brillante, perfecta para viajes, emergencias o acampadas.",
         "Gran capacidad de 40,000 mAh, carga hasta 4 veces un celular promedio — confiable y duradero."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1352,6 +1683,9 @@
         "Rechazo de palma y alta precisión, escribe o dibuja naturalmente sin interrupciones ni marcas accidentales.",
         "Compatible con muchos modelos de iPad, incluyendo modelos Air, Pro y Mini (ver imagen para referencia).",
         "Carga rápida y larga duración, listo para usar en segundos y con batería de alto rendimiento."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1367,6 +1701,9 @@
         "Compatible con iOS, Android y Windows, úsalo en tablets, celulares y pantallas táctiles sin configuraciones.",
         "Respuesta inmediata y suave, ideal para escribir, dibujar o tomar notas con total precisión.",
         "Recargable y duradero, incluye cable USB tipo C para una carga rápida y autonomía prolongada."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1381,6 +1718,9 @@
         "Luz LED potente y regulable, perfecta para grabaciones nocturnas o en interiores con calidad profesional.",
         "Micrófono direccional de alta claridad, capta tu voz con nitidez y elimina ruidos externos.",
         "Trípode multifunción con control remoto, ideal para grabar vlogs, entrevistas o videos para redes."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1396,6 +1736,9 @@
         "Velocidad ultrarrápida USB 3.0, transfiere archivos grandes en segundos entre tu disco duro y PC o laptop.",
         "Compatible con HDD y SSD de 2.5”, ideal para respaldar, clonar o recuperar información fácilmente.",
         "Plug & Play sin instalación, con soporte OTG para celulares Android y televisores inteligentes."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1413,6 +1756,10 @@
         "Audio potente y claro, ideal para escuchar música, responder llamadas o usar GPS sin quitarte el casco.",
         "Conexión Bluetooth estable y de largo alcance, perfecta para motociclistas, ciclistas o aventureros.",
         "Batería de larga duración y diseño resistente al agua, listo para cualquier clima o trayecto."
+      ],
+      "categories": [
+        "Motocicletas",
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1430,6 +1777,11 @@
         "Conexión WiFi 2.4GHz estable y visión panorámica de 360°, controla cada rincón desde tu celular en tiempo real.",
         "Visión nocturna a color y detección inteligente de movimiento, recibe alertas instantáneas ante cualquier actividad sospechosa.",
         "Audio bidireccional y seguimiento automático, habla y escucha desde la app mientras la cámara sigue al intruso."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -1445,6 +1797,11 @@
         "Iluminación LED e infrarroja dual, ofrece imagen nítida tanto de día como de noche con visión a color.",
         "Conexión WiFi estable y control remoto, gira 360° y monitorea tu hogar desde tu celular estés donde estés.",
         "Detección inteligente de movimiento y audio bidireccional, recibe alertas en tiempo real y comunícate al instante."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -1462,6 +1819,10 @@
         "Recargable por USB, olvídate de las pilas y disfruta de vuelos más largos y estables.",
         "Fácil de usar con control remoto y sensor infrarrojo, ideal para niños y adultos que aman volar.",
         "Diseño resistente de 18 cm, ligero, duradero y perfecto para interiores o exteriores."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1477,6 +1838,11 @@
         "Conexión WiFi en tiempo real, visualiza desde tu celular todo lo que ocurre en tu hogar u oficina estés donde estés.",
         "Calidad HD y visión nocturna automática, obtén imágenes claras incluso en la oscuridad.",
         "Compacta, recargable y fácil de instalar, ideal para usar como cámara de seguridad, niñera o vigilancia de mascotas."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -1493,6 +1859,10 @@
         "Estructura metálica ultra resistente, soporta hasta 400 lbs ideal para carga pesada, herramientas, compras o actividades al aire libre.",
         "Ruedas todoterreno y manija ajustable, se adapta a cualquier superficie y altura para un manejo cómodo y estable.",
         "Diseño plegable y portátil, se guarda fácilmente en segundos ocupando el mínimo espacio."
+      ],
+      "categories": [
+        "Hogar",
+        "Herramientas"
       ]
     },
     {
@@ -1511,6 +1881,9 @@
         "L.140 – Solo mouse (sin baterías)",
         "L.170 – Mouse + 2 baterías AAA",
         "L.190 – Mouse + 4 baterías AAA"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1526,6 +1899,9 @@
         "Diseño combinado blanco y negro, simboliza la conexión y el equilibrio perfecto entre ambos.",
         "Cuentas luminosas que brillan en la oscuridad, para que siempre estén conectados incluso a distancia.",
         "Material ajustable y resistente, ideal para uso diario y como regalo significativo para tu pareja."
+      ],
+      "categories": [
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1546,6 +1922,9 @@
         "Fórmula enriquecida con Aceites Naturales (Argán, Macadamia y Aguacate) que hidratan profundamente y reducen el frizz.",
         "Contiene Vitaminas A, C, E y Pro-Vitamina B5, esenciales para fortalecer el cabello y estimular su crecimiento.",
         "Repara el daño desde la raíz hasta las puntas, dejando tu cabello suave, saludable y con brillo natural."
+      ],
+      "categories": [
+        "Hogar"
       ]
     },
     {
@@ -1561,6 +1940,9 @@
         "Ideal para guardar miles de fotos, videos 4K, música y aplicaciones sin preocuparte por el espacio.",
         "Velocidad de lectura V30 / U3 / A1, perfecta para grabación fluida en cámaras, drones, celulares y consolas.",
         "Alta durabilidad y resistencia, diseñada con tecnología High Endurance para un rendimiento estable y prolongado."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1584,6 +1966,9 @@
         "Materiales de calidad, con acabados suaves, cierres seguros y detalles metálicos o bordados según el modelo.",
         "Tamaño práctico y cómodo, perfecto para llevar celular, billetera, maquillaje y más con estilo.",
         "235 Lps cada una."
+      ],
+      "categories": [
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1600,6 +1985,9 @@
         "Diseño sofisticado y femenino, con detalle de lazo desmontable que agrega un toque chic a cualquier look.",
         "Amplio espacio interior, ideal para guardar celular, billetera, maquillaje y accesorios personales.",
         "Material resistente y liviano, con acabado acolchado y costuras de alta calidad para uso diario."
+      ],
+      "categories": [
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1617,6 +2005,9 @@
         "Conecta y juega sin cables — Compatible con PS3, PS4 y PC, con respuesta rápida y sin retrasos.",
         "Diseño ergonómico y preciso — Joysticks suaves, botones sensibles y vibración realista para una experiencia pro.",
         "Recargable y duradero — Batería de larga vida, panel táctil y luces LED integradas."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1635,6 +2026,9 @@
         "Conexión instantánea y carga magnética — Se adhiere al iPad y se carga sin cables en solo 2 h para hasta 9 h de uso continuo.",
         "Escritura natural y precisa — Dibuja o escribe sin retrasos ni marcas por contacto de la mano (rechazo de palma).",
         "Compatible con iPad Pro, Air y Mini recientes — Ideal para clases, notas, diseño o dibujo digital."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1651,6 +2045,9 @@
         "Diseño único y llamativo — Convierte tu casco en el centro de atención con su estilo divertido y suave al tacto.",
         "Material de alta calidad — Peluche grueso, resistente y cómodo, no se deforma ni se pela con el uso.",
         "Fácil de colocar y quitar — Se adapta a la mayoría de cascos sin afectar la visibilidad ni la ventilación."
+      ],
+      "categories": [
+        "Motocicletas"
       ]
     },
     {
@@ -1665,6 +2062,9 @@
         "Todo lo que necesitas en un solo kit — Incluye correas, soportes, trípodes, flotador, ventosa, filtros y más para cualquier tipo de grabación.",
         "Protección total — Incluye vidrios templados para cuidar la lente y pantalla de tu cámara en todo momento.",
         "Ideal para acción extrema — Perfecto para deportes, viajes, buceo, ciclismo o grabaciones profesionales."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1683,6 +2083,10 @@
         "Imágenes Ultra HD — Cámara doble de alta definición para capturar fotos y videos con máxima claridad.",
         "Luz LED integrada — Ideal para vuelos nocturnos o en baja luz, con un diseño moderno y plegable.",
         "Listo para llevar — Incluye estuche de transporte, batería recargable y accesorios completos para volar desde el primer día."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1699,6 +2103,10 @@
         "No deja marcas — Ideal para sujetar el cabello mientras te maquillas o haces skincare sin arruinar el peinado.",
         "Suaves y resistentes — Pinzas con acabado liso que evitan tirones y cuidan tu cabello.",
         "Práctico set de 6 piezas — Colores elegantes (negro, crema y rosa) perfectos para uso diario o profesional."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1715,6 +2123,10 @@
         "Diseño en forma de gota — Perfectas para zonas difíciles como nariz y ojos, logrando una aplicación uniforme.",
         "Set de 6 piezas (3 negras + 3 beige) — Reutilizables, lavables y con cinta elástica para mejor agarre y control.",
         "25 LPS Unidad / 200 LPS 10 unidades."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1732,6 +2144,10 @@
         "Comodidad y discreción total — Hechos de silicona suave, se adaptan perfectamente al cuerpo y no se marcan bajo la ropa.",
         "Autoadhesivos y reutilizables — Fáciles de colocar, no se deslizan y pueden usarse varias veces sin perder adherencia.",
         "Diseños elegantes — Incluye 2 figuras (redondo y flor) ideales para cualquier tipo de prenda o evento especial."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1750,6 +2166,10 @@
         "Diseños elegantes y modernos — Cada set combina brillo y estilo europeo, perfectos para lucir con cualquier outfit.",
         "Alta calidad y acabado fino — Elaborados con materiales resistentes y detalles brillantes que no se opacan con el uso.",
         "Ideal para regalo o uso diario — Incluye collar y aretes con medidas perfectas para realzar tu look con un toque sofisticado."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1766,6 +2186,9 @@
         "Imagen nítida y clara — Resolución Full HD ideal para videollamadas, clases en línea, streaming o reuniones profesionales.",
         "Micrófono con reducción de ruido — Capta tu voz con excelente calidad, eliminando ruidos de fondo para una comunicación más natural.",
         "Fácil instalación Plug & Play — Conéctala por USB y úsala al instante sin necesidad de drivers; rotación 360° y ángulo ajustable."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1783,6 +2206,9 @@
         "Material resistente y duradero — Fabricada en acero de alta calidad con mango firme para mayor seguridad y vida útil.",
         "Estilo original Yamaha — Diseño elegante con acabado metálico y el emblema distintivo, manteniendo el look profesional de tu moto.",
         "1 llave x 200 lps / 2 llaves x 360 lps / 3 llaves x 450 lps"
+      ],
+      "categories": [
+        "Motocicletas"
       ]
     },
     {
@@ -1799,6 +2225,9 @@
         "Comodidad y agarre total — Material antideslizante que brinda control firme al conducir, incluso en trayectos largos.",
         "Protege y renueva tu interior — Mantiene el volante fresco en calor y cálido en frío, evitando desgaste y mejorando la estética del auto.",
         "Ajuste universal (37-38 cm) — Fácil de instalar, se adapta a la mayoría de los autos y viene con cubre palanca y freno a juego."
+      ],
+      "categories": [
+        "Autos"
       ]
     },
     {
@@ -1818,6 +2247,9 @@
         "Elimina manchas al instante — Ideal para paredes, cocina, baño, zapatos, autos y más. Solo añade agua, ¡sin químicos!",
         "Material duradero y reutilizable — Su textura de melamina borra grasa, tinta, rayones y suciedad sin esfuerzo.",
         "Segura y ecológica — No daña las superficies y se puede usar varias veces. ¡Resultados visibles en segundos!"
+      ],
+      "categories": [
+        "Hogar"
       ]
     },
     {
@@ -1835,6 +2267,9 @@
         "Protección total — A prueba de rayones, salpicaduras y suciedad. Ideal para mantener tu consola como nueva.",
         "Diseño inteligente — Permite cargar sin quitar la funda y mantiene todos los puertos accesibles.",
         "Material premium TPU — Flexible, resistente a impactos y con acabado brillante que realza el color original de tu Switch."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1852,6 +2287,11 @@
         "Reacción ultra rápida — Mejora tu precisión y evita resbalones gracias a su tejido conductivo sensible al tacto.",
         "Comodidad total — Suaves, elásticos y transpirables, ideales para largas sesiones de juego.",
         "Aumenta tu rendimiento — Perfectos para Free Fire, PUBG, COD Mobile y más."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1866,6 +2306,9 @@
         "Diseño tierno — Bordado con un adorable dinosaurio, ideal para bebés de 1 a 2 años.",
         "Material suave y cálido — Tejido delicado que protege la cabecita del frío sin irritar la piel.",
         "Colores encantadores — Rosado, gris y negro para combinar con cualquier atuendo."
+      ],
+      "categories": [
+        "Ropa y calzado"
       ]
     },
     {
@@ -1881,6 +2324,10 @@
         "Ahorra espacio y mantén todo en orden — Separa tu ropa, calzado y accesorios fácilmente para viajes sin estrés.",
         "Material resistente y ligero — Fabricados con tela impermeable, ideales para proteger tus prendas.",
         "Variedad de colores elegantes — Perfectos para identificar tus pertenencias y viajar con estilo."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1896,6 +2343,10 @@
         "Ideal para viajeros — Tamaño compacto pero espacioso (26×21×9 cm) con múltiples compartimentos y cierres de alta calidad.",
         "Diseño funcional y resistente — Perfecto para guardar pasaporte, celular, cartera, llaves y documentos.",
         "Uso versátil — Puedes llevarlo como bolso cruzado o al hombro, cómodo para viajes, trabajo o uso diario."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -1911,6 +2362,10 @@
         "Perfecto para regalar — Ideal para expresar cariño en San Valentín o cualquier ocasión especial.",
         "Textura suave y resistente — Su cuerpo rígido mantiene la forma, mientras el peluche es agradable al tacto.",
         "Detalles encantadores — Con corazones bordados y frases como “Love” y “I Love You”, que lo hacen aún más tierno."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1927,6 +2382,11 @@
         "Potente y versátil — Con 6 focos LED y 4 modos de luz (alta, media, estroboscópica y lateral COB), ilumina cualquier espacio con gran intensidad.",
         "Recargable por USB — Incluye indicador de batería para monitorear el nivel de carga en tiempo real.",
         "Diseño resistente y ergonómico — Fabricada en material ABS de alta calidad, con agarre cómodo y tamaño ideal para camping, trabajo o emergencias."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Herramientas"
       ]
     },
     {
@@ -1942,6 +2402,10 @@
         "Set completo — Incluye 1 camión de transporte de 3 niveles y 10 carros plasticos de colores diseño deportivo y de cuerda veloces.",
         "Diseño plegable y resistente — El camión mide 28 cm, fabricado en plástico duradero, ideal para niños curiosos y activos.",
         "Regalo perfecto — Ideal para esta Navidad o cumpleaños, promueve la imaginación y el juego creativo."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1959,6 +2423,10 @@
         "Lanzamiento potente y preciso — Solo apunta, aprieta el gatillo y mira cómo el avión despega volando alto con fuerza.",
         "Material liviano y seguro — Fabricado en espuma resistente, ideal para niños, sin riesgo de golpes ni daños.",
         "Entretenimiento activo — Perfecto para jugar al aire libre, desarrollar coordinación y disfrutar en familia."
+      ],
+      "categories": [
+        "Juguetes",
+        "Entretenimiento"
       ]
     },
     {
@@ -1977,6 +2445,9 @@
         "Iluminación arcoíris profesional: luces LED personalizables con efecto brillante para sesiones de juego épicas.",
         "Teclado QWERTY de 104 teclas: diseño ergonómico, respuesta rápida y silenciosa, ideal para gamers o trabajo.",
         "Mouse de precisión: sensor óptico fluido con retroiluminación RGB para movimientos exactos y cómodos."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -1991,6 +2462,9 @@
         "Velocidad extrema USB 3.0: transfiere archivos grandes en segundos con conexión estable y rápida.",
         "Compatible con todo: úsala en computadoras, celulares, tablets o Smart TV gracias al adaptador Tipo C incluido.",
         "Diseño elegante y resistente: cuerpo metálico premium con anillo llavero, ideal para llevar tus datos con estilo y seguridad."
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -2007,6 +2481,10 @@
         "Iluminación LED ambiental: transforma tu setup con luces RGB que realzan el ambiente gamer.",
         "Diseño en forma de L: aprovecha al máximo tu espacio para dos monitores, PC y accesorios.",
         "Armado rápido y estructura firme: materiales resistentes y superficie amplia tipo fibra de carbono."
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Otros"
       ]
     },
     {
@@ -2022,6 +2500,10 @@
         "Amplio y funcional: espacio ideal para tablet, documentos, billetera y más, perfecto para uso diario o viajes.",
         "Material premium: fabricado con lona reforzada y cremalleras metálicas duraderas.",
         "Estilo moderno y cómodo: correa ajustable, diseño elegante y bolsillos organizadores que te mantienen siempre preparado."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -2038,6 +2520,9 @@
         "Vista perfecta en todo momento: su rotación de 360° te permite ajustar el ángulo ideal sin bloquear tu visión al conducir.",
         "Agarre firme y seguro: sistema de sujeción estable para mantener tu celular fijo incluso en caminos irregulares.",
         "Instalación fácil y adaptable: se ajusta a la mayoría de retrovisores, ideal para GPS, videollamadas o grabaciones."
+      ],
+      "categories": [
+        "Autos"
       ]
     },
     {
@@ -2054,6 +2539,10 @@
         "Organización total: múltiples compartimentos con cierre y malla transparente para tener todo a la vista y al alcance.",
         "Protege tus cosméticos y artículos personales de la manera mas ordenada y limpia.",
         "Diseño colgante y portátil: ideal para viajes, gimnasio o uso diario; se cuelga fácilmente y ocupa poco espacio."
+      ],
+      "categories": [
+        "Ropa y calzado",
+        "Carteras y bolsos"
       ]
     },
     {
@@ -2069,6 +2558,9 @@
         "🎤📱 Audio claro y profesional con este micrófono inalámbrico Tipo C—ideal para videos, TikTok, entrevistas y contenido sin ruidos.",
         "🔋✨ Recargable, ligero y fácil de usar: solo conectas el receptor y listo, se empareja automáticamente.",
         "🚚🇭🇳 Calidad garantizada y PAGA AL RECIBIR en todo Honduras—¡tu sonido sube de nivel desde el primer uso!"
+      ],
+      "categories": [
+        "Tecnología y celulares"
       ]
     },
     {
@@ -2086,6 +2578,10 @@
         "🌙✨ Convierte cualquier cuarto en una galaxia mágica con su proyección potente y giratoria—¡los niños quedan encantados al instante!",
         "⭐🎆 Incluye 17 modos de colores para crear ambientes únicos, relajantes y súper visuales antes de dormir.",
         "📦🇭🇳 Ideal para bebés, niños y decoración—¡PAGAS AL RECIBIR en todo Honduras, sin riesgos y entrega segura!"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Entretenimiento"
       ]
     },
     {
@@ -2102,6 +2598,9 @@
         "🧴💧 Limpieza suave y efectiva con CeraVe Hydrating Facial Cleanser—ideal para piel normal a seca y respetuoso con la barrera de tu piel.",
         "🌿✨ Fórmula con ceramidas y ácido hialurónico que deja tu piel fresca, hidratada y con sensación de confort todo el día.",
         "📦🇭🇳 Producto ORIGINAL y de calidad dermatológica—¡envíos a TODO Honduras para que tu piel reciba el mejor cuidado!"
+      ],
+      "categories": [
+        "Otros"
       ]
     },
     {
@@ -2116,6 +2615,9 @@
         "✨💊 Suplemento de colágeno con 5 tipos esenciales para apoyar tu piel, articulaciones y bienestar general—¡fácil de tomar y súper completo!",
         "🌟💆‍♀️ Ideal para quienes desean mantener una apariencia fresca, apoyar la elasticidad de la piel y fortalecer cabello y uñas como parte de su rutina diaria.",
         "📦🇭🇳 ¡Calidad premium, 60 tabletas y envíos a TODO Honduras! Una opción práctica para complementar tu cuidado personal."
+      ],
+      "categories": [
+        "Otros"
       ]
     },
     {
@@ -2130,6 +2632,11 @@
         "📹🚨 Cámara exterior giratoria WiFi con visión clara día/noche—protege tu hogar con tecnología premium a PRECIO DE LIQUIDACIÓN.",
         "📱🔄 Controla desde tu celular, gira 360° y recibe alertas en tiempo real: seguridad total sin complicaciones.",
         "💥🏡 Oferta limitada + envíos a todo Honduras—¡llévate la mejor cámara al mejor precio antes que se agoten!"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     },
     {
@@ -2144,6 +2651,11 @@
         "🧵✨ Pasamontañas de tela suave y cómoda, ideal para moto, ciclismo o actividades al aire libre sin molestias.",
         "😮‍💨❄️ Totalmente transpirable y fresco, te protege del sol, viento y polvo manteniéndote siempre cómodo.",
         "🏍️📦 Calidad premium y envíos a todo Honduras—¡útil, ligero y perfecto para tu día a día en carretera!"
+      ],
+      "categories": [
+        "Motocicletas",
+        "Autos",
+        "Herramientas"
       ]
     },
     {
@@ -2158,6 +2670,9 @@
         "📸🔥 Graba tus rutas como un PRO con este soporte de cámara y celular para casco: firme, seguro y listo para cualquier aventura.",
         "🏍️💨 Obtén ángulos súper estables sin vibraciones y captura todo tu recorrido con calidad brutal.",
         "💪📱 Diseño ajustable, cómodo y compatible con GoPro y celulares—¡la herramienta perfecta para motovloggers, bikers y amantes de la adrenalina!"
+      ],
+      "categories": [
+        "Motocicletas"
       ]
     },
     {
@@ -2172,6 +2687,11 @@
         "Mini Cámara WiFi 1080P 🔥 Económica, práctica y recargable 💪 ¡Envíos a todo Honduras! 🇭🇳",
         "Vigila todo desde tu celular 📱 Cámara HD WiFi con detección de movimiento 🔋 ¡Protege tu hijo ya!",
         "Seguridad total en tu mano 👁️ Mini Cámara WiFi 1080P FHD recargable 🚚 ¡Paga al recibir en todo Honduras! 🇭🇳"
+      ],
+      "categories": [
+        "Tecnología y celulares",
+        "Hogar",
+        "Seguridad"
       ]
     }
   ]
