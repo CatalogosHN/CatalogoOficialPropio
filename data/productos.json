@@ -3,6 +3,168 @@
   "generatedAt": "2026-08-05T05:18:03.286Z",
   "products": [
     {
+      "id": "producto-136",
+      "name": "Cascos Matte Negro Integral DOT",
+      "price": 1000,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/matdot1.jpg",
+        "images/matdot2.jpg",
+        "images/matdot3.jpg",
+        "images/matdot4.jpg"
+      ],
+      "description": [
+        "Talla: L."
+      ]
+    },
+    {
+      "id": "producto-137",
+      "name": "Cascos NBU Rojo Matte DOT Y ECE",
+      "price": 1800,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/nbuxdot1.jpg",
+        "images/nbuxdot2.jpg",
+        "images/nbuxdot3.jpg",
+        "images/nbuxdot4.jpg"
+      ],
+      "description": [
+        "Talla: XL."
+      ]
+    },
+    {
+      "id": "producto-138",
+      "name": "Cascos NBU Rosado Matte DOT Y ECE",
+      "price": 1800,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/matnbudot1.jpg",
+        "images/matnbudot2.jpg",
+        "images/matnbudot3.jpg",
+        "images/matnbudot4.jpg"
+      ],
+      "description": [
+        "Talla: L."
+      ]
+    },
+    {
+      "id": "producto-139",
+      "name": "Cascos MotoCabra Azul Matte DOT",
+      "price": 1600,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/matmtcdot1.jpg",
+        "images/matmtcdot2.jpg",
+        "images/matmtcdot3.jpg",
+        "images/matmtcdot4.jpg"
+      ],
+      "description": [
+        "Talla: XL."
+      ]
+    },
+    {
+      "id": "producto-140",
+      "name": "Cascos Fotocromado Mate Negro Integral DOT",
+      "price": 1100,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/fotocasc1.jpg",
+        "images/fotocasc2.jpg",
+        "images/fotocasc3.jpg",
+        "images/fotocasc4.jpg"
+      ],
+      "description": [
+        "Talla: L."
+      ]
+    },
+    {
+      "id": "producto-141",
+      "name": "Cascos Modular NBU Azul Matte DOT",
+      "price": 1800,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/matnbumoddot1.jpg",
+        "images/matnbumoddot2.jpg",
+        "images/matnbumoddot3.jpg",
+        "images/matnbumoddot4.jpg"
+      ],
+      "description": [
+        "Talla: XL."
+      ]
+    },
+    {
+      "id": "producto-142",
+      "name": "Cascos Modular HNE con Luz LED DOT",
+      "price": 1800,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/mathnemoddot1.jpg",
+        "images/mathnemoddot2.jpg",
+        "images/mathnemoddot3.jpg",
+        "images/mathnemoddot4.jpg"
+      ],
+      "description": [
+        "Talla: L."
+      ]
+    },
+    {
+      "id": "producto-143",
+      "name": "Cascos Modular NBU Gris DOT",
+      "price": 1600,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/matnbudotmod1.jpg",
+        "images/matnbudotmod2.jpg",
+        "images/matnbudotmod3.jpg",
+        "images/matnbudotmod4.jpg"
+      ],
+      "description": [
+        "Talla: XL."
+      ]
+    },
+    {
+      "id": "producto-144",
+      "name": "Cascos Modular HNE con Luz LED DOT",
+      "price": 1800,
+      "category": "Motocicletas",
+      "categories": [
+        "Motocicletas"
+      ],
+      "images": [
+        "images/mathnemod1dot1.jpg",
+        "images/mathnemod1dot2.jpg",
+        "images/mathnemod1dot3.jpg",
+        "images/mathnemod1dot4.jpg"
+      ],
+      "description": [
+        "Talla: L."
+      ]
+    },
+    {
       "id": "producto-001",
       "name": "🍎✨ iPhone 8 Plus 256GB NUEVO*.",
       "price": 5200,
